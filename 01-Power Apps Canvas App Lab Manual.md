@@ -396,44 +396,45 @@ If(CountRows(CompareList) > 0, DisplayMode.Edit, DisplayMode.Disabled)</br>
   <img src="images/ppa91.jpg"/><br/>
 16. Click **Preview**.</br>
 17. Select a couple of devices and click the **Compare** button and verify that it takes you to the second screen.</br>
-18. You should navigate to the new empty screen. Close the preview.</br>
   <img src="images/ppa92.jpg"/><br/>
+18. You should navigate to the new empty screen. Close the preview.</br>
+  <img src="images/ppa93.jpg"/><br/>
 19. Go to the **MainScreen** in the left navigation.</br>
 20. Select both the **UserLabel** and **HeaderLabel**, right click and select Group.</br>
-  <img src="images/ppa93.jpg"/><br/>
+  <img src="images/ppa94.jpg"/><br/>
 21. Rename the group **Header**.</br>
 22. Click on the … button of the **Header** and select **Copy**.</br>
-  <img src="images/ppa94.jpg"/><br/>
-23. Right click on the **CompareScreen** by and select **Paste**.</br>
   <img src="images/ppa95.jpg"/><br/>
-24. Select the **Header** group, click on the **Align** button locate in the **Home** tab, and Select **Align Top**.</br>
+23. Right click on the **CompareScreen** by and select **Paste**.</br>
   <img src="images/ppa96.jpg"/><br/>
-25. The **Header** in the **CompareScreen** should look like the image below.</br>
+24. Select the **Header** group, click on the **Align** button locate in the **Home** tab, and Select **Align Top**.</br>
   <img src="images/ppa97.jpg"/><br/>
+25. The **Header** in the **CompareScreen** should look like the image below.</br>
+  <img src="images/ppa98.jpg"/><br/>
 26. Copy **DeviceGallery** from the **MainScreen** and paste it in the **CompareScreen**.</br>
 27. Move the gallery to the left edge of the screen. Align the top of the gallery to be just under the header banner. Use the right drag handle to reduce the width of the gallery and create space for a data entry form on the right of the screen. You will insert a Form control here and configure it in a subsequent lab.</br>
-  <img src="images/ppa98.jpg"/><br/>
-28. Rename this gallery to **CompareListGallery**.</br>
   <img src="images/ppa99.jpg"/><br/>
+28. Rename this gallery to **CompareListGallery**.</br>
+  <img src="images/ppa100.jpg"/><br/>
   
 ### Task 2: Configure the gallery
 In this task, you will configure the gallery to show devices that were selected from the comparison gallery on the MainScreen.</br>
 1. Select the new **CompareListGallery**.</br>
 2. Select **Items** in the property drop-down list and change the data source in the formula bar to CompareList.</br>
-  <img src="images/ppa100.jpg"/><br/>
-3. The gallery will now show the selected items from the MainScreen.</br>
   <img src="images/ppa101.jpg"/><br/>
+3. The gallery will now show the selected items from the MainScreen.</br>
+  <img src="images/ppa102.jpg"/><br/>
 
 ### Task 3: Remove and add controls to the gallery
 In the **CompareScreen** we are selecting a given item to get approved, so we do not need a Compare checkbox.</br>
 1. Select the **Compare checkbox** on the left most template cell and press the **Delete** key to delete the checkbox.</br>
 2. Now let’s add a few labels to display additional attributes about the device. A good way to do this is to copy pastean existing label. Select the first label in the gallery that is displaying the device name. Copy it (Ctrl-C) and paste it(Ctrl-V). Rename these labels as you go for ease of use later.</br>
 3. Move the new label so that it is just below the price. Set the **Text** property to: ThisItem.ManufacturerName.</br>
-  <img src="images/ppa102.jpg"/><br/>
-4. Use the ribbon to change the font weight from **Semibold** to **Normal** and change the **Size** property from 20 to 18.</br>
   <img src="images/ppa103.jpg"/><br/>
-5. Copy and paste this label and move the new fourth label below the third label. Set its **Text** property to: ThisItem.Memory</br>
+4. Use the ribbon to change the font weight from **Semibold** to **Normal** and change the **Size** property from 20 to 18.</br>
   <img src="images/ppa104.jpg"/><br/>
+5. Copy and paste this label and move the new fourth label below the third label. Set its **Text** property to: ThisItem.Memory</br>
+  <img src="images/ppa105.jpg"/><br/>
 6. Repeat this and add text boxes to display the additional device properties – Processor, Storage, ScreenSize, etc. Feel free to customize the labels by changing their Size, Color, Fill and Font Weight properties.</br>
 
 ``Note: For this lab, to save time you may add one or two of these additional properties and skip adding all the additional device properties.``
@@ -443,7 +444,7 @@ Like the behavior in the manufacturer gallery in the first screen, use the **Tem
 1. Select the **CompareListGallery**.</br>
 2. With the whole gallery selected, set the **TemplateFill** property to:</br>
 If(ThisItem.IsSelected,ColorFade(HeaderLabel.Fill,75%))</br>
-  <img src="images/ppa105.jpg"/><br/>
+  <img src="images/ppa106.jpg"/><br/>
 This is conditionally setting a Fill color if the cell is selected.</br>
 You could have set a specific color or RGB value, but we recommend using the ColorFade function, so it matches the header label with a 75% fade. If you change the fill color of header label, this template fill color will automatically change.</br>
 3. Holding down **Alt**, click a few different items in the gallery, notice the selected item is highlighted in a light blue color.</br>
@@ -451,13 +452,13 @@ You could have set a specific color or RGB value, but we recommend using the Col
 ### Task 5: Add an icon to navigate to the first screen
 1. Select the **CompareScreen**.</br>
 2. Go to **Insert**, then **Icons** and select the **Left** icon. Position it in the upper left corner of the screen.</br>
-  <img src="images/ppa106.jpg"/><br/>
-3. Select the arrow control, change the **Color** property to **White**. You can change this in the formula bar or through the **Properties** pane on the right.</br>
   <img src="images/ppa107.jpg"/><br/>
-4. Move the arrow to the top-left corner.</br>
+3. Select the arrow control, change the **Color** property to **White**. You can change this in the formula bar or through the **Properties** pane on the right.</br>
   <img src="images/ppa108.jpg"/><br/>
-5. Set the **OnSelect action** for the icon to Back(). This will cause navigation back to the previous screen.</br>
+4. Move the arrow to the top-left corner.</br>
   <img src="images/ppa109.jpg"/><br/>
+5. Set the **OnSelect action** for the icon to Back(). This will cause navigation back to the previous screen.</br>
+  <img src="images/ppa110.jpg"/><br/>
 
 #### Optional UI enhancement:
 Add **padding around the icon** using the Properties pane. Set the padding values to 10 each for Top, Bottom, Left, and Right. This will make the icon look smaller but still have a larger hit target for the click action. This is a good pattern to use for most icons.</br>
@@ -465,48 +466,48 @@ Add **padding around the icon** using the Properties pane. Set the padding value
 ### Task 6: Test the app
 Let’s save the app by selecting **File -> Save**. It is a good idea to save your app regularly. **Note:** You can also test your app right on the canvas by holding down the Alt key to activate buttons and other controls, as well as double-clicking to type into controls.</br>
 1. Go to the **MainScreen** and **Preview** the app by hitting the **Play** button in the top right.</br>
-  <img src="images/ppa110.jpg"/><br/>
+  <img src="images/ppa111.jpg"/><br/>
 2. Uncheck if there are any checked devices.</br>
 3. Select **Microsoft** on the left to show a filtered set of devices.</br>
 4. Check the compare box on a few devices on the main screen from a few different manufacturers.</br>
 5. Click the **Compare** button to navigate to the compare screen.</br>
 6. Tap or click on different devices in the gallery and verify that the selection highlight works.</br>
 7. Click the **Back** button and confirm you get back to the main screen.</br>
-  <img src="images/ppa111.jpg"/><br/>
-8. Click **Clear Selection**.</br>
   <img src="images/ppa112.jpg"/><br/>
-9. The **CompareList** will clear, and the **Compare** button will become disabled.</br>
+8. Click **Clear Selection**.</br>
   <img src="images/ppa113.jpg"/><br/>
+9. The **CompareList** will clear, and the **Compare** button will become disabled.</br>
+  <img src="images/ppa114.jpg"/><br/>
 10. Close the preview.</br>
 
 ### Task 7: Test the app on a mobile device
 Congratulations! You’ve created your Power Apps app. Now let’s publish and test it on a mobile device.</br>
 1. **File -> Save** and click the **Publish** button.</br>
-  <img src="images/ppa114.jpg"/><br/>
-2. Click **Publish this version** on the confirmation prompt.</br>
   <img src="images/ppa115.jpg"/><br/>
+2. Click **Publish this version** on the confirmation prompt.</br>
+  <img src="images/ppa116.jpg"/><br/>
 This action will publish the latest saved version of the app.</br>
 3. Go to your device’s app store application. Search for **“Power Apps”** and install the Power Apps application.</br>
 Launch the app.</br>
-  <img src="images/ppa116.jpg"/><br/>
+  <img src="images/ppa117.jpg"/><br/>
 4. When the app starts, it will prompt for your business or school account credentials. **Log in** with the same account that you used to create the Power Apps app. You should see the app you just created in the list of apps. **Run the app**.</br>
 
 ### Task 8: [Optional] Share the application with a colleague
 You may optionally share the application with another user within the same organizational tenant as the user who created the app. So, if you had logged in as meganb@contoso.com, you may share the app with any other User, Security Group or Distribution Group within the @contoso.com tenant.</br>
 1. To share the app, go to Make Power Apps. Log in if prompted for credentials.</br>
 2. Select **Apps** in the left pane, look for your Device Ordering app in the app list, click the three dots (…) next to the app to bring up the context menu. Click the **Share** option.</br>
-  <img src="images/ppa117.jpg"/><br/>
-3. In the share screen, enter the name or email of the user you would like to share the app with. You may also share it with a user group.</br>
   <img src="images/ppa118.jpg"/><br/>
-4. Select the user or group; this will add it to the **Shared with** list below. You may provide this user/group either **Can use** or **Can edit** permissions.</br>
+3. In the share screen, enter the name or email of the user you would like to share the app with. You may also share it with a user group.</br>
   <img src="images/ppa119.jpg"/><br/>
-5. If the **Send an email invitation** is checked, when you hit **Save**, the user or all users in the group will receive an email letting them know that the app has been shared with them, along with a link to open the app.
+4. Select the user or group; this will add it to the **Shared with** list below. You may provide this user/group either **Can use** or **Can edit** permissions.</br>
   <img src="images/ppa120.jpg"/><br/>
+5. If the **Send an email invitation** is checked, when you hit **Save**, the user or all users in the group will receive an email letting them know that the app has been shared with them, along with a link to open the app.
+  <img src="images/ppa121.jpg"/><br/>
 
 ### Next steps
 Now that you have learned the basics of creating an app, take a little time to think about what you would like to create next. What made you most excited about the device ordering app? What would you have done differently? Here’s anexample of some changes you can make to the UI:</br>
 Features like shading, number of rows, and greying out items not selected can have a big impact on how your app looksand feels. To learn more, check out the links in the reference section and take the next step in building great apps.</br>
-  <img src="images/ppa121.jpg"/><br/>
+  <img src="images/ppa122.jpg"/><br/>
 
 ### Lab survey
 We would appreciate your feedback on the Business Application Platform technologies and on this hands-on-lab, such as the quality of documentation and the usefulness of the learning experience.</br>
