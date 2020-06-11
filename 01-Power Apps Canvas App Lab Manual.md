@@ -240,7 +240,7 @@ Earlier you connected the data source using the Data tab in the right pane. You 
 4. Select the first (top-most) image and using the **Properties** pane on the right, set the **Image position** property to **Fit**.</br>
   <img src="images/ppa53.jpg"/><br/>
 5. Reduce the height of the template cell such that all nine manufacturers fit without a scrollbar. To do this, use the drag handles to first reduce the height of the image and subsequently reduce the height of the template cell. Note again that to select the template cell, select the entire gallery and click on the pencil icon in the top left.</br>
-  <img src="images/ppa54.jpg"/><br/>
+  <img src="images/ppa55.jpg"/><br/>
 
 ### Task 5: Highlight the selected item in the gallery
 In this task, you will use the **TemplateFill** property of the manufacturer gallery to specify a highlight color for the selected item</br>
@@ -251,7 +251,7 @@ Alternately, you could set the TemplateFill property to:</br>
 If(ThisItem.IsSelected,ColorFade(HeaderLabel.Fill,75%))</br>
 ```
 This approach is recommended so the fill color matches the header label with a 75% fade. If you change the fill color of header label, the fill color of the selected item in the gallery will automatically change.</br>
-  <img src="images/ppa55.jpg"/><br/>
+  <img src="images/ppa56.jpg"/><br/>
 2. Now try using the preview mode to perform a quick test of this highlighting. You can enable preview mode by holding down the Alt key (also known as the Option key) and clicking a few different manufacturers in the gallery, notice the selected item in the manufacturer gallery is highlighted in a light blue color. The preview mode ends when you stop holding the key.</br>
 Alternatively, you could click the Play ( ) button to enter preview mode, and to exit this you would hit the X in the upper right corner or use the Esc key.</br>
 
@@ -262,9 +262,9 @@ Filter(Devices, ManufacturerID = ManufacturerGallery.Selected.ManufacturerID)</b
 for alternate/European locales:</br>
 Filter(Devices; ManufacturerID = ManufacturerGallery.Selected.ManufacturerID)</br></br>
 This will filter the device gallery to only display items that match the selected manufacturer based on **ManufacturerID**.</br>
-  <img src="images/ppa56.jpg"/><br/>
-2. Select a different item in the manufacturer gallery on the left, and you will notice the device gallery will update accordingly. Note: In some cases, the first few items won’t show the selection, try selecting the 5th or 6th item if that occurs.</br>
   <img src="images/ppa57.jpg"/><br/>
+2. Select a different item in the manufacturer gallery on the left, and you will notice the device gallery will update accordingly. Note: In some cases, the first few items won’t show the selection, try selecting the 5th or 6th item if that occurs.</br>
+  <img src="images/ppa58.jpg"/><br/>
 ``Note: If you get an error when entering the Filter command, check the name of the manufacturer gallery. The name inthe filter command must match the name of your gallery.``
 
 More details on the Filter() function is available at Filter Lookup.</br>
@@ -273,7 +273,7 @@ A complete set of expressions is available at Formula Reference.</br>
 ### Task 7: Configure text labels in the device gallery
 1. Select the subtitle in the **DeviceGallery**. It is named **Subtitle1** in the tree view. It may already have the default value set to the **DeviceType** property (e.g. Tablet).</br>
 2. Let us now change the label to display the device price by setting the label’s Text property to: **ThisItem.Price**</br>
-  <img src="images/ppa58.jpg"/><br/>
+  <img src="images/ppa059.jpg"/><br/>
 Here are some additional formatting suggestions. These are for cosmetic purposes only, feel free to skip past these:</br>
 - Expand the width of the label to the template width.</br>
 Notice that the second label expands as well. This is because it is X property is set to Title1.X, the X coordinateposition of the Title1 label. For more on the relative positioning of controls, see UX Patterns</br>
