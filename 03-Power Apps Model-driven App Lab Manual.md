@@ -63,6 +63,8 @@ by the two or three back office staff that manage fulfilling device requests. Us
 advantage of the Business Process feature of Model-driven apps to keep the back-office staff on track for each device
 request.
 
+   <img src="images/image01.png"/><br/>
+
 Model-driven apps are a new style of application you can build directly from PowerApps.com. Model-driven apps make it
 easy to build forms over data applications quickly. This style of application brings together forms, views, dashboards and
 charts quickly to provide a productive user experience for working with related data. These components can quickly be
