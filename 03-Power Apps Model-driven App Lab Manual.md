@@ -105,7 +105,7 @@ to navigate between the components (Entity views, Dashboards and other visual co
 3. Click **`Create`**.</br>
 
     <img src="images/image03.png"/><br/>
-4. Enter **`Device Procurement`** for Name and click **`Done.`** You have now created the app definition and will start
+4. Enter **`Device Procurement`** for Name and click **Done.** You have now created the app definition and will start
     adding components in to build the app.</br>
     
     <img src="images/image04.png"/><br/>
@@ -217,12 +217,12 @@ through the task of managing the procurement of the requested device.
 In discovery meetings with the back-office workers, we learned that a device request goes through the following tasks as
 they perform the magic to get the requestor their device.
 
-- **Device Requested** – Today this is an e-mail sent to them with the device request. Going forward in the new
+- **`Device Requested`** – Today this is an e-mail sent to them with the device request. Going forward in the new
     Power Apps world this will be a Device Order record in the Common Data Service.
-- **Place Order** – Once they receive the request, they will place an order with a supplier and get an order ID.
-- **Receive Device** – This occurs when the device is received, and they send it to the IT staff to be configured with
+- **`Place Order`** – Once they receive the request, they will place an order with a supplier and get an order ID.
+- **`Receive Device`** – This occurs when the device is received, and they send it to the IT staff to be configured with
     the standard software.
-- **Distribute Device** – Once configured it needs to get to the employee that requested it, and they need to survey
+- **`Distribute Device`** – Once configured it needs to get to the employee that requested it, and they need to survey
     the employee to make sure they are happy.
 
 Each of these represents a milestone and will become our Stages in the Business Process Flow. In a more complex
@@ -238,16 +238,16 @@ The completed Business Process Flow will look like the image below.
 
 ### Task 1: Create business process flow
 
-1. Select **Flows**.<br/>
+1. Select **`Flows`**.<br/>
  
    <img src="images/image22.png"/><br/>
 
-2. Select the **Business Process Flow** tab and click **New**.<br/>
+2. Select the **`Business Process Flow`** tab and click **`New`**.<br/>
 
    <img src="images/image23.png"/><br/>
  
-3. Enter **Device Procurement Process** for Flow Name, type and then select **Device Order** for Entity, and click
-    **Create**. When you create the Business Process Flow behind the scenes it creates another entity with the same
+3. Enter **`Device Procurement Process`** for Flow Name, type and then select **`Device Order`** for Entity, and click
+    **`Create`**. When you create the Business Process Flow behind the scenes it creates another entity with the same
     name as the Business Process Flow to track the progress of each business process on the record. Because of this,
     choose your name carefully, for example, you wouldn’t want to use the same name as your entity e.g. Device
     Order. Here we choose Device Procurement Process. Note: After you click OK, a new window will be loaded with
@@ -256,19 +256,19 @@ The completed Business Process Flow will look like the image below.
     
     <img src="images/image24.png"/><br/>
     
-4. Select the **New Stage** and change the Display Name to **Device Requested** and click **Apply**.<br/>
+4. Select the **`New Stage`** and change the Display Name to **`Device Requested`** and click **`Apply`**.<br/>
 
    <img src="images/image25.png"/><br/>
    
-5. Click **Details.**<br/>
+5. Click **`Details.`**<br/>
  
    <img src="images/image26.png"/><br/>
    
-6. Select the **Data Step** , select **Request Date** for Data Field and click **Apply**. The Step Name will auto-filled for you.<br/>
+6. Select the **`Data Step`** , select **`Request Date`** for Data Field and click **`Apply`**. The Step Name will auto-filled for you.<br/>
 
    <img src="images/image27.png"/><br/>
    
-7. Click **Add** and select **Add Data Step**.<br/>
+7. Click **`Add`** and select **`Add Data Step`**.<br/>
 
    <img src="images/image28.png"/><br/>
   
@@ -276,39 +276,39 @@ The completed Business Process Flow will look like the image below.
 
    <img src="images/image29.png"/><br/>
   
-9. Select **Approval Status** for Data field and click **Apply**.<br/>
+9. Select **`Approval Status`** for Data field and click **`Apply`**.<br/>
 
    <img src="images/image30.png"/><br/>
   
-10. Add another Data Step, select **Price** for Data Field and click **Apply**.<br/>
+10. Add another Data Step, select **`Price`** for Data Field and click **`Apply`**.<br/>
 
     <img src="images/image31.png"/><br/>
   
-11. Select the **Components** tab.<br/>
+11. Select the **`Components`** tab.<br/>
 
     <img src="images/image32.png"/><br/>
    
-12. Drag **Stage** to the canvas and place to the right of the **Device Requested** stage.<br/>
+12. Drag **`Stage`** to the canvas and place to the right of the **`Device Requested`** stage.<br/>
 
     <img src="images/image33.png"/><br/>
    
-13. Select the new stage, change the Display Name to **Place Order** and click **Apply**.<br/>
+13. Select the new stage, change the Display Name to **`Place Order`** and click **`Apply`**.<br/>
 
     <img src="images/image34.png"/><br/>
     
-14. Click **Details**.<br/>
+14. Click **`Details`**.<br/>
 
     <img src="images/image35.png"/><br/>
     
-15. Select the existing Data Step, select **Estimated Ship Date** for Data Field, and click **Apply**.<br/>
+15. Select the existing Data Step, select **`Estimated Ship Date`** for Data Field, and click **`Apply`**.<br/>
 
     <img src="images/image36.png"/><br/>
    
-16. Select the **Components** tab, drag **Data Step** to the canvas and place is under the **Estimated Ship Date** step.<br/>
+16. Select the **`Components`** tab, drag **`Data Step`** to the canvas and place is under the **`Estimated Ship Date`** step.<br/>
 
     <img src="images/image37..png"/><br/>
   
-17. Select **Supplier Order ID** for Data Field, check the **Required** field to and click **Apply**. Remember from before this
+17. Select **`Supplier Order ID`** for Data Field, check the **`Required`** field to and click **`Apply`**. Remember from before this
     field isn’t required, but by checking this here, we will require it to be filled out before they can advance to the next
     stage. It won’t, however, block saving the record if there isn’t a data value populated like it would if it was marked
     required on the field definition.<br/>
@@ -319,32 +319,32 @@ The completed Business Process Flow will look like the image below.
 business process using the same technique you learned above. You may skip ahead to Task 2 to add a branch
 condition.**
 
-18. Select the **Components** tab and drag **Stage** to the right side of the **Place Order** stage.<br/>
+18. Select the **`Components`** tab and drag **Stage** to the right side of the **`Place Order`** stage.<br/>
 
     <img src="images/image39.png"/><br/>
    
-19. Select the new stage, change the Display name to **Receive Device** and click **Apply**.<br/>
+19. Select the new stage, change the Display name to **`Receive Device`** and click **`Apply`**.<br/>
 
     <img src="images/image40.png"/><br/>
    
-20. Click **Details**.<br/>
+20. Click **`Details`**.<br/>
 
-21. Select the existing Data Step and select **Device Received** for Data Field and click **Apply**.<br/>
+21. Select the existing Data Step and select **`Device Received`** for Data Field and click **`Apply`**.<br/>
 
     <img src="images/image41.png"/><br/>
    
-22. Select the **Components** tab, drag **Data Step** to the **Receive Device** stage and place it under the **Device Received**
+22. Select the **`Components`** tab, drag **Data Step** to the **`Receive Device`** stage and place it under the **`Device Received`**
     step.<br/>
     
     <img src="images/image42.png"/><br/>
     
-23. Select **Device Configured** for Data Field and click **Apply**.<br/>
+23. Select **Device Configured** for Data Field and click **`Apply`**.<br/>
 
     <img src="images/image43.png"/><br/>
    
-24. Add another stage and name it **Distribute Device**.<br/>
+24. Add another stage and name it **`Distribute Device`**.<br/>
    
-25. Add two data steps **Device Delivered** and **Send Survey**.<br/>
+25. Add two data steps **`Device Delivered`** and **`Send Survey`**.<br/>
   
     <img src="images/image44.png"/><br/>
 
@@ -354,19 +354,19 @@ In this task, we are going to add a conditional branch to our Business Process F
 learned that if the price was greater than $1K there were additional steps in place to get capital approval prior to placing
 the order. In this task, you will see how we can modify the flow we built to accommodate this.
 
-1. Select the **Components** tab, drag **Condition** and place it between **Device Requested** and **Place Order**.<br/>
+1. Select the **`Components`** tab, drag **`Condition`** and place it between **`Device Requested`** and **`Place Order`**.<br/>
    
    <img src="images/image45.png"/><br/>
    
-2. Select the **Condition** and change the Display Name to **Check Price.**<br/>
+2. Select the **`Condition`** and change the Display Name to **`Check Price.`**<br/>
    
    <img src="images/image46.png"/><br/>
      
-3. In the **Rule 1** section, select **Price** for Field, **is greater than** for Operator, **Value** for Type, **1000** for Value, and click **Apply**. It’s important to note that fields you use in the rules on the condition must be in the prior Stages steps. That is one of the reasons we put the price in there previously.<br/>
+3. In the **`Rule 1`** section, select **`Price`** for Field, **`is greater than`** for Operator, **`Value`** for Type, **`1000`** for Value, and click **`Apply`**. It’s important to note that fields you use in the rules on the condition must be in the prior Stages steps. That is one of the reasons we put the price in there previously.<br/>
    
      <img src="images/image47.png"/><br/>
      
-4. Click **Save**.<br/>
+4. Click **`Save`**.<br/>
 
    <img src="images/image48.png"/><br/>
      
@@ -374,23 +374,23 @@ the order. In this task, you will see how we can modify the flow we built to acc
  
    <img src="images/image49.png"/><br/>
    
-6. Select the new stage, change the Display Name to **Capital Approval** and click **Apply**.<br/>
+6. Select the new stage, change the Display Name to **`Capital Approval`** and click **`Apply`**.<br/>
 
    <img src="images/image50.png"/><br/>
    
-7. Click **Details**.<br/>
+7. Click **`Details`**.<br/>
   
    <img src="images/image51.png"/><br/>
    
-8. Select the existing Data Step, select **Capital Approved** for Data Field and click **Apply**.<br/>
+8. Select the existing Data Step, select **`Capital Approved`** for Data Field and click **`Apply`**.<br/>
  
    <img src="images/image52.png"/><br/>
    
-9. Click **Save**.<br/>
+9. Click **`Save`**.<br/>
 
    <img src="images/image53.png"/><br/>
    
-10. Click **Activate**.<br/>
+10. Click **`Activate`**.<br/>
 
     <img src="images/image54.png"/><br/>
     
@@ -399,7 +399,8 @@ the order. In this task, you will see how we can modify the flow we built to acc
     <img src="images/image56.png"/><br/>
     
 12. Close the process editor.<br/>  
-13. Select **Solutions**.<br/>
+
+13. Select **`Solutions`**.<br/>
  
     <img src="images/image57.png"/><br/>
     
@@ -418,13 +419,13 @@ example, you might provide a view to show all device requests that are waiting t
 
 ### Task 1: Modify the form
 
-1. Expand **Data** , select **Entities**. Search for **Device Order** entity and click to open.<br/>
+1. Expand **`Data`** , select **`Entities`**. Search for **`Device Order`** entity and click to open.<br/>
  
    <img src="images/image59.png"/><br/>
   
-2. Select the **Forms** tab.<br/>
+2. Select the **`Forms`** tab.<br/>
 
-3. Select the **Information Main** form and click **Edit Form** > **Edit form in new tab.**<br
+3. Select the **`Information Main`** form and click **`Edit Form** > **Edit form in new tab.`**<br
 
    <img src="images/image60.png"/><br/>
 
@@ -433,17 +434,17 @@ Note: The form designer is being modernized, you can read more here Overview of 
 designer.
 ```
 4. If you are required to sign in again, do so.<br/>
-5. Search for **Approver** field and drag it to the form.<br/>
-6. Place the **Approver** field above the Device Name field.<br/>
+5. Search for **`Approver`** field and drag it to the form.<br/>
+6. Place the **`Approver`** field above the Device Name field.<br/>
    
    <img src="images/image61.png"/><br/>
    
-7. The new form designer will let you reposition fields. Drag the **Approver** field and place it between the Device
+7. The new form designer will let you reposition fields. Drag the **`Approver`** field and place it between the Device
     Name and Owner fields.<br/>
     
     <img src="images/image62.png"/><br/>
     
-8. The new form designer will let you cut and paste fields. Select the **Approver** field and click on the **Cut** button.4
+8. The new form designer will let you cut and paste fields. Select the **`Approver`** field and click on the **`Cut`** button.4
    
    <img src="images/image63.png"/><br/>
    
@@ -451,27 +452,27 @@ designer.
 
    <img src="images/image64.png"/><br/>
    
-10. The **Approval** field will be moved to the bottom.<br/>
+10. The **`Approval`** field will be moved to the bottom.<br/>
 
     <img src="images/image65.png"/><br/>
     
-11. Click **Save**.<br/>
+11. Click **`Save`**.<br/>
 
     <img src="images/image66.png"/><br/>
     
-12. Click **Publish**.<br/>
+12. Click **`Publish`**.<br/>
 
     <img src="images/image67.png"/><br/>
     
-13. Close the **Form Designer** tab.<br/>
+13. Close the **`Form Designer`** tab.<br/>
 
 ### Task 2: Modify the view
 
-1. Select the **Views** tab and click on the **Active Device Orders** view to open it.<br/>
+1. Select the **`Views`** tab and click on the **`Active Device Orders`** view to open it.<br/>
     
    <img src="images/image68.png"/><br/>
      
-2. Click the **Approval Status** field once (you do not need to double click).<br/>
+2. Click the **`Approval Status`** field once (you do not need to double click).<br/>
  
    <img src="images/image69.png"/><br/>
 
@@ -479,23 +480,23 @@ designer.
 
    <img src="images/image70.png"/><br/>
     
-4. Click on the **+ Add Column** button.<br/>
+4. Click on the **`+ Add Column`** button.<br/>
 
    <img src="images/image71.png"/><br/>
 
-5. Select **Estimated Ship Date.**<br/>
+5. Select **`Estimated Ship Date.`**<br/>
 
    <img src="images/image72.png"/><br/>
 
-6. Click + column again and change from **Default** to **All**.<br/>
+6. Click + column again and change from **`Default`** to **`All`**.<br/>
 
    <img src="images/image73.png"/><br/>
     
-7. Add **Price** and **Status** to the View.<br/>
+7. Add **`Price`** and **`Status`** to the View.<br/>
     
    <img src="images/image74.png"/><br/>
     
-8. Click **Save.**<br/>
+8. Click **`Save.`**<br/>
 
    <img src="images/image75.png"/><br/>
     
@@ -514,26 +515,26 @@ In this exercise, we are going to test the application you just built.
 
 ### Task 1: Test the application
 
-1. Select **Apps** , select the Device Procurement application and click **Play**.<br/>
+1. Select **`Apps** , select the Device Procurement application and click **`Play`**.<br/>
 
     <img src="images/image78.png"/><br/>
     
-2. The application will start. The **Active Device Orders** view will load.<br/>
+2. The application will start. The **`Active Device Orders`** view will load.<br/>
     **Note: If you don’t show any data in the list, run the Device Ordering canvas app you built and submit some orders.**<br/>
     
      <img src="images/image79.png"/><br/>
      
 3. Start a new web browser instance and navigate to Make Power Apps. Do not close the Model-driven application.<br/>
 
-4. Select **Apps** , select the Device Ordering application you created in module 2, and click **Play**.<br/>
+4. Select **`Apps`** , select the Device Ordering application you created in module 2, and click **`Play`**.<br/>
 
     <img src="images/image80.png"/><br/>
     
-5. Select two devices, make sure one of the devices is priced over $1,000 and click **Compare**.<br/>
+5. Select two devices, make sure one of the devices is priced over $1,000 and click **`Compare`**.<br/>
   
    <img src="images/image81.png"/><br/>
      
-6. Select the device with the price over $1k and click **Submit**.<br/>
+6. Select the device with the price over $1k and click **`Submit`**.<br/>
 
    <img src="images/image82.png"/><br/>
    
@@ -547,11 +548,11 @@ In this exercise, we are going to test the application you just built.
    <img src="images/image84.png"/><br/>
     
 9. Select a device with a price under $1k, provide approver email (or leave in the auto-populated manager email)
-    and click **Submit**.<br/>
+    and click **`Submit`**.<br/>
     
     <img src="images/image85.png"/><br/>
     
-10. Go back to the Model-driven application you created, sort the orders by **Created On** column, and you should see
+10. Go back to the Model-driven application you created, sort the orders by **`Created On`** column, and you should see
     the two devices you ordered using the Power Apps Canvas App.<br/>
     
      <img src="images/image86.png"/><br/>
@@ -560,12 +561,12 @@ In this exercise, we are going to test the application you just built.
    
     <img src="images/image87.png"/><br/>
      
-12. The **Business Process Flow** will now have **5** stages. This is because this order costs more than $1k and needs
-    **Capital Approval**.<br/>
+12. The **`Business Process Flow`** will now have **`5`** stages. This is because this order costs more than $1k and needs
+    **`Capital Approval`**.<br/>
     
     <img src="images/image88.png"/><br/>
      
-13. Click **Device Orders**.<br/>
+13. Click **`Device Orders`**.<br/>
 
      <img src="images/image89.png"/><br/>
      
@@ -573,7 +574,7 @@ In this exercise, we are going to test the application you just built.
     
     <img src="images/image90.png"/><br/>
     
-15. The **Business Process Flow** for this order will have **4** stages; this is because this order does not require **Capital**
+15. The **`Business Process Flow`** for this order will have **`4`** stages; this is because this order does not require **`Capital`**
     **Approval**.<br/>
     
     <img src="images/image91.png"/><br/>
