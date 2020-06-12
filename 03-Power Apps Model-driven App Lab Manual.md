@@ -92,7 +92,7 @@ announcement at Announcement.
 In this exercise, you will be creating a standalone Model-driven application that will leverage the same Device Request
 entity you created in the Common Data Service in Lab 2.
 
-Task 1: Create an application
+### Task 1: Create an application
 
 The first thing you will do is create a Model-driven application. This application will serve as a container to identify all the
 components that make up the application. It also will include a sitemap that defines the custom navigation users will use
@@ -168,7 +168,7 @@ Note: The properties panel on the right will only show if you click on the New S
    
 13. Click **Save and Close**.</br>
 
-Task 2: Add procurement fields to the Device Orders
+### Task 2: Add procurement fields to the Device Orders
 
 In this task, you will add new fields to the Device Order table. The fields you are going to add here are fields that support
 the Business Process Flow, which we are going to build in the next exercise. When you use a Business Process, it consists
@@ -241,11 +241,11 @@ The completed Business Process Flow will look like the image below.
 
 <img src="images/image21.png"/><br/>
 
-Task 1: Create business process flow
+### Task 1: Create business process flow
 
 1. Select **Flows**.<br/>
  
-  <img src="images/image22.png"/><br/>
+   <img src="images/image22.png"/><br/>
 
 2. Select the **Business Process Flow** tab and click **New**.<br/>
 
@@ -353,7 +353,7 @@ condition.**
   
     <img src="images/image44.png"/><br/>
 
-Task 2: Add a branch condition
+### Task 2: Add a branch condition
 
 In this task, we are going to add a conditional branch to our Business Process Flow. When we did the discovery, we
 learned that if the price was greater than $1K there were additional steps in place to get capital approval prior to placing
