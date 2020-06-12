@@ -25,7 +25,7 @@ If you have not completed the previous two modules, you can use the partially co
 the “\Completed\Module2” folder. Follow the instructions in the document “Importing Module 2 Completed” before
 proceeding with this module, which will provision the app, and the Common Data Service entity into your environment.
 
-Model-driven Apps – A brief introduction
+### Model-driven Apps – A brief introduction
 
 The model-driven apps are built by composing multiple page types and components using several focused designers.
 Additionally, there are designers for the entity and business logic. The page types come from the View Designer, Form
@@ -47,7 +47,7 @@ targeted definition of different parts of the app and its behavior.
 The model-driven apps are fully responsive so a single definition works from web to tablet to mobile devices. This is a
 different with the canvas apps which need to choose the mobile vs. Tablet when defining the app.
 
-## Scenario for building a Model-driven app
+### Scenario for building a Model-driven app
 
 In the first lab module, you built a Power Apps Canvas application for an organization where every three years the
 employees go through a hardware refresh cycle. The application let employees place a request for a device using the
