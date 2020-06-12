@@ -515,7 +515,7 @@ In this exercise, we are going to test the application you just built.
 
 ### Task 1: Test the application
 
-1. Select **`Apps** , select the Device Procurement application and click **`Play`**.<br/>
+1. Select **`Apps`** , select the Device Procurement application and click **`Play`**.<br/>
 
     <img src="images/image78.png"/><br/>
     
