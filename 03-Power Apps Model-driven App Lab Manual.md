@@ -184,20 +184,35 @@ To support our scenario, we are going to add the following fields to the entity:
 the user’s ordering experience was, and will manually check this once they send it, but they have a desire in a future
 update to automate sending a survey in a future release.
 
-1. Navigate to Make Power Apps
-2. Expand **Data** , select **Entities** , search for **Device Order** and click on it.
-3. Make sure you have the **Fields** tab selected and click **Add Field**.
+1. Navigate to Make Power Apps.</br>
+2. Expand **Data** , select **Entities** , search for **Device Order** and click on it.</br>
+
+    <img src="images/image15.png"/><br/>
+    
+3. Make sure you have the **Fields** tab selected and click **Add Field**.</br>
+
+    <img src="images/image16.png"/><br/>
+    
 4. Enter **Capital Approved** for **Display Name** , select **Two Options** for **Data Type** and click **Done**. We are using a
     Two Option data type here because when we use it as a Step in the Business Process, we want to be able to simply
-    mark it completed. Two Options are essentially a true or false field.
-
+    mark it completed. Two Options are essentially a true or false field.</br>
+    
+     <img src="images/image17.png"/><br/>
+     
 5. Create 4 more **Two Option** fields and name them **Device Received, Device Configured, Send Survey** , and
-    **Device Delivered**.
+    **Device Delivered**.</br>
+    
+     <img src="images/image18.png"/><br/>
+     
 6. Add another field, with the name **Supplier Order ID** , select **Text** for **Data Type** and click **Done**. Notice we
     are not asking you to make this field required here, but we will make it a required field in the Business
-    Process later in the lab.
-7. Click **Save Entity**.
+    Process later in the lab.</br>
+    
+     <img src="images/image19.png"/><br/>
+     
+7. Click **Save Entity**.</br>
 
+     <img src="images/image20.png"/><br/>
 
 ### Exercise 2: Business Process Flow
 
