@@ -70,6 +70,7 @@ You might get a warning message about this field being optional. Ignore it and i
 14. Hit Enter, type **Comments:** and select **Comments**.</br>
 15. Your **Flow** will now look like the image below.</br>
 16. **Save** your flow</br>
+
 **Note:** When creating your own approval flows, you may additionally include a clickable link that will be displayed in the approval email. In this scenario, for example, you could include a link to view device details in an online catalogue. You would include the **Item link** and **Item link description**.</br></br>
 **Note:** You could also set the **Item link** to deep link into a Power Apps app to view more details about the request. In this scenario, you might pass an OrderID or a DeviceID as a URL parameter. Power Apps accepts URL parameters, see Flow URL Patameters for more details.</br>
 
@@ -180,9 +181,11 @@ In this exercise, you will add two actions to the “if no” branch.</br>
 Congratulations! You have successfully completed this lab. You have created your Power Apps app and flow and connected them to a Common Data Service entity. Now you are ready to build your own apps and workflows.</br></br>
 
 ## Lab survey
-We would appreciate your feedback on the Business Application Platform technologies and on this hands-on-lab, such asthe quality of documentation and the usefulness of the learning experience.</br></br>
-Please use the survey at App in a day survey to share your feedback.</br></br>
-You may provide feedback for each module as you complete it or at the end once you’ve completed all the modules.Thank you!</br></br>
+We would appreciate your feedback on the Business Application Platform technologies and on this hands-on-lab, such asthe quality of documentation and the usefulness of the learning experience.</br>
+
+Please use the survey at App in a day survey to share your feedback.</br>
+
+You may provide feedback for each module as you complete it or at the end once you’ve completed all the modules.Thank you!</br>
 
 **References**
 App in a Day introduces some of the key functionalities available in Power Apps, Power Automate, Power BI and theCommon Data Service. For an up to date list of learning references, see Power Apps Resources and Power Automate</br>
@@ -190,7 +193,7 @@ App in a Day introduces some of the key functionalities available in Power Apps,
 ## Copyright
 By using this demo/lab, you agree to the following terms:
 The technology/functionality described in this demo/lab is provided by Microsoft Corporation for purposes of obtaining your feedback and to provide you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or
-sell this demo/lab or any portion thereof.</br></br>
+sell this demo/lab or any portion thereof.</br>
 
 COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR
 LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.
@@ -200,17 +203,17 @@ COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/C
 REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT
 WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH
 FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCTIONALITY IN A
-PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.</br></br>
+PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.</br>
 
 **FEEDBACK.** If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the
-feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.</br></br>
+feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.</br>
 
 MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE
 DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS,
 IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT.
 MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY
 OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION
-CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.</br></br>
+CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.</br>
 
 #### DISCLAIMER
 This demo/lab contains only a portion of new features and enhancements in Microsoft Power Apps. Some of the features might change in future releases of the product. In this demo/lab, you will learn about some, but not all, new features.
