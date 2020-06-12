@@ -359,22 +359,58 @@ In this task, we are going to add a conditional branch to our Business Process F
 learned that if the price was greater than $1K there were additional steps in place to get capital approval prior to placing
 the order. In this task, you will see how we can modify the flow we built to accommodate this.
 
-1. Select the **Components** tab, drag **Condition** and place it between **Device Requested** and **Place Order**.
-2. Select the **Condition** and change the Display Name to **Check Price.**
-3. In the **Rule 1** section, select **Price** for Field, **is greater than** for Operator, **Value** for Type, **1000** for Value, and click
-    **Apply**. It’s important to note that fields you use in the rules on the condition must be in the prior Stages steps.
-    That is one of the reasons we put the price in there previously.
-4. Click **Save**.
-5. A new stage will be added.
-6. Select the new stage, change the Display Name to **Capital Approval** and click **Apply**.
-7. Click **Details**.
-8. Select the existing Data Step, select **Capital Approved** for Data Field and click **Apply**.
-9. Click **Save**.
-10. Click **Activate**.
-11. Confirm the activation.
-12. Close the process editor.
-13. Select **Solutions**.
-14. **Publish All Customizations**.
+1. Select the **Components** tab, drag **Condition** and place it between **Device Requested** and **Place Order**.<br/>
+   
+   <img src="images/image45.png"/><br/>
+   
+2. Select the **Condition** and change the Display Name to **Check Price.**<br/>
+   
+   <img src="images/image46.png"/><br/>
+     
+3. In the **Rule 1** section, select **Price** for Field, **is greater than** for Operator, **Value** for Type, **1000** for Value, and click **Apply**. It’s important to note that fields you use in the rules on the condition must be in the prior Stages steps. That is one of the reasons we put the price in there previously.<br/>
+   
+     <img src="images/image47.png"/><br/>
+     
+4. Click **Save**.<br/>
+
+   <img src="images/image48.png"/><br/>
+     
+5. A new stage will be added.<br/>
+ 
+   <img src="images/image49.png"/><br/>
+   
+6. Select the new stage, change the Display Name to **Capital Approval** and click **Apply**.<br/>
+
+   <img src="images/image50.png"/><br/>
+   
+7. Click **Details**.<br/>
+  
+   <img src="images/image51.png"/><br/>
+   
+8. Select the existing Data Step, select **Capital Approved** for Data Field and click **Apply**.<br/>
+ 
+   <img src="images/image52.png"/><br/>
+   
+9. Click **Save**.<br/>
+
+   <img src="images/image53.png"/><br/>
+   
+10. Click **Activate**.<br/>
+
+    <img src="images/image54.png"/><br/>
+    
+11. Confirm the activation.<br/>
+
+    <img src="images/image56.png"/><br/>
+    
+12. Close the process editor.<br/>  
+13. Select **Solutions**.<br/>
+ 
+    <img src="images/image57.png"/><br/>
+    
+14. **Publish All Customizations**.<br/>
+    
+    <img src="images/image58.png"/><br/>
 
 
 ### Exercise 3: Form and View Modification
