@@ -99,13 +99,13 @@ components that make up the application. It also will include a sitemap that def
 to navigate between the components (Entity views, Dashboards and other visual components).
 
 1. Navigate to Make Power Apps, and select the environment you created. </br>
-2. Select **``Home``** and click **``Model Driven App from Blank``**. </br>
+2. Select **`Home`** and click **`Model Driven App from Blank`**. </br>
 
     <img src="images/image02.png"/><br/>
 3. Click **`Create`**.</br>
 
     <img src="images/image03.png"/><br/>
-4. Enter **Device Procurement** for Name and click **Done.** You have now created the app definition and will start
+4. Enter **`Device Procurement`** for Name and click **`Done.`** You have now created the app definition and will start
     adding components in to build the app.</br>
     
     <img src="images/image04.png"/><br/>
@@ -120,53 +120,48 @@ Next, you will build a Site Map for the application, the completed Site Map will
 ```
    <img src="images/image06.png"/><br/>
 
-5. Click **Edit Site Map**. This will launch the designer that will let you modify the App navigation.</br>
+5. Click **`Edit Site Map`**. This will launch the designer that will let you modify the App navigation.</br>
 
      <img src="images/image07.png"/><br/>
-6. Select the **New Area** label, in the properties rename it **Back Office** and enter **nav_backoffice** for ID**.** If you were
-    building a more complex application, you could use Areas to group together related items making it easy for the
-    user to navigate between the components.</br>
+     
+6. Select the **`New Area`** label, in the properties rename it **`Back Office`** and enter **`nav_backoffice`** for **`ID.`** If you were building a more complex application, you could use Areas to group together related items making it easy for the user to navigate between the components.</br>
     
      <img src="images/image08.png"/><br/>
     
-
-
-
 ```
 Note: The properties panel on the right will only show if you click on the New Area on the left.
 ```
-7. Select the **New Group** enter **Orders** for Title, and **nav_ordersgroup** for ID.</br>
+7. Select the **`New Group`** enter **`Orders`** for Title, and **`nav_ordersgroup`** for ID.</br>
 
      <img src="images/image09.png"/><br/>
     
 ```
 Note: The properties panel on the right will only show if you click on the New Group on the left.
 ```
-8. Select the **New Subarea**.</br>
+8. Select the **`New Subarea`**.</br>
 
      <img src="images/image10.png"/><br/>
 
 ```
 Note: The properties panel on the right will only show if you click on the New Subarea on the left.
 ```
-9. Set the **Entity** for **Type** , select **Device Order** for **Entity** , enter **Device Orders** for **Title** and enter
-    **nav_device_orders** for **ID**.</br>
+9. Set the **`Entity`** for **`Type`** , select **`Device Order`** for **`Entity`** , enter **`Device Orders`** for **`Title`** and enter **`nav_device_orders`** for **`ID`**.</br>
     
      <img src="images/image11.png"/><br/>
    
-10. Click **Save and Close.**</br>
+10. Click **`Save and Close.`**</br>
 
     <img src="images/image12.png"/><br/>
    
-11. Click **Save** again, this time in the App Designer.</br>
+11. Click **`Save`** again, this time in the App Designer.</br>
  
     <img src="images/image13.png"/><br/>
    
-12. **Publish** the application.</br>
+12. **`Publish`** the application.</br>
 
     <img src="images/image14.png"/><br/>
    
-13. Click **Save and Close**.</br>
+13. Click **`Save and Close`**.</br>
 
 ### Task 2: Add procurement fields to the Device Orders
 
@@ -178,39 +173,39 @@ make it quicker when we create the Business Process in this task, we are going t
 
 To support our scenario, we are going to add the following fields to the entity:
 
-**Capital Approved** : This field will be used in the flow to capture that the device order has received capital approval.
+**`Capital Approved`** : This field will be used in the flow to capture that the device order has received capital approval.
 
-**Send Survey** : This field will be used in the final stage. Right now the team plans on manually sending a survey to see how
+**`Send Survey`** : This field will be used in the final stage. Right now the team plans on manually sending a survey to see how
 the user’s ordering experience was, and will manually check this once they send it, but they have a desire in a future
 update to automate sending a survey in a future release.
 
 1. Navigate to Make Power Apps.</br>
-2. Expand **Data** , select **Entities** , search for **Device Order** and click on it.</br>
+2. Expand **`Data`** , select **`Entities`** , search for **`Device Order`** and click on it.</br>
 
     <img src="images/image15.png"/><br/>
     
-3. Make sure you have the **Fields** tab selected and click **Add Field**.</br>
+3. Make sure you have the **`Fields`** tab selected and click **`Add Field`**.</br>
 
     <img src="images/image16.png"/><br/>
     
-4. Enter **Capital Approved** for **Display Name** , select **Two Options** for **Data Type** and click **Done**. We are using a
+4. Enter **`Capital Approved`** for **`Display Name`** , select **`Two Options`** for **`Data Type`** and click **`Done`**. We are using a
     Two Option data type here because when we use it as a Step in the Business Process, we want to be able to simply
     mark it completed. Two Options are essentially a true or false field.</br>
     
      <img src="images/image17.png"/><br/>
      
-5. Create 4 more **Two Option** fields and name them **Device Received, Device Configured, Send Survey** , and
-    **Device Delivered**.</br>
+5. Create 4 more **`Two Option`** fields and name them **`Device Received, Device Configured, Send Survey`** , and
+    **`Device Delivered`**.</br>
     
      <img src="images/image18.png"/><br/>
      
-6. Add another field, with the name **Supplier Order ID** , select **Text** for **Data Type** and click **Done**. Notice we
+6. Add another field, with the name **`Supplier Order ID`** , select **`Text`** for **`Data Type`** and click **`Done`**. Notice we
     are not asking you to make this field required here, but we will make it a required field in the Business
     Process later in the lab.</br>
     
      <img src="images/image19.png"/><br/>
      
-7. Click **Save Entity**.</br>
+7. Click **`Save Entity`**.</br>
 
      <img src="images/image20.png"/><br/>
 
