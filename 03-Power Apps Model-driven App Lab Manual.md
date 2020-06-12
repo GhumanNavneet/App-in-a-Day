@@ -102,7 +102,7 @@ to navigate between the components (Entity views, Dashboards and other visual co
 2. Select **``Home``** and click **``Model Driven App from Blank``**. </br>
 
     <img src="images/image02.png"/><br/>
-3. Click **Create**.</br>
+3. Click **`Create`**.</br>
 
     <img src="images/image03.png"/><br/>
 4. Enter **Device Procurement** for Name and click **Done.** You have now created the app definition and will start
