@@ -99,7 +99,7 @@ components that make up the application. It also will include a sitemap that def
 to navigate between the components (Entity views, Dashboards and other visual components).
 
 1. Navigate to Make Power Apps, and select the environment you created. </br>
-2. Select **Home** and click **Model Driven App from Blank**. </br>
+2. Select **``Home``** and click **``Model Driven App from Blank``**. </br>
 
     <img src="images/image02.png"/><br/>
 3. Click **Create**.</br>
