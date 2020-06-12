@@ -100,6 +100,8 @@ to navigate between the components (Entity views, Dashboards and other visual co
 
 1. Navigate to Make Power Apps, and select the environment you created.
 2. Select **Home** and click **Model Driven App from Blank**.
+     
+    <img src="images/image02.png"/><br/>
 3. Click **Create**.
 4. Enter **Device Procurement** for Name and click **Done.** You have now created the app definition and will start
     adding components in to build the app.
