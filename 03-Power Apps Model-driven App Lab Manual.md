@@ -421,27 +421,54 @@ views are created for the entity. Views are used in a Model-Driven app any time 
 You would modify the view to add additional fields or change the placement. You can also create additional views, for
 example, you might provide a view to show all device requests that are waiting to be received.
 
-Task 1: Modify the form
+### Task 1: Modify the form
 
-1. Expand **Data** , select **Entities**. Search for **Device Order** entity and click to open.
-2. Select the **Forms** tab.
-3. Select the **Information Main** form and click **Edit Form** > **Edit form in new tab.**
+1. Expand **Data** , select **Entities**. Search for **Device Order** entity and click to open.<br/>
+ 
+   <img src="images/image59.png"/><br/>
+  
+2. Select the **Forms** tab.<br/>
+
+3. Select the **Information Main** form and click **Edit Form** > **Edit form in new tab.**<br
+
+   <img src="images/image60.png"/><br/>
 
 ```
 Note: The form designer is being modernized, you can read more here Overview of the model-driven form
 designer.
 ```
-4. If you are required to sign in again, do so.
-5. Search for **Approver** field and drag it to the form.
-6. Place the **Approver** field above the Device Name field.
+4. If you are required to sign in again, do so.<br/>
+5. Search for **Approver** field and drag it to the form.<br/>
+6. Place the **Approver** field above the Device Name field.<br/>
+   
+   <img src="images/image61.png"/><br/>
+   
 7. The new form designer will let you reposition fields. Drag the **Approver** field and place it between the Device
-    Name and Owner fields.
-8. The new form designer will let you cut and paste fields. Select the **Approver** field and click on the **Cut** button.
-9. Select the **Owner** field and click **Paste**.
-10. The **Approval** field will be moved to the bottom.
-11. Click **Save**.
-12. Click **Publish**.
-13. Close the **Form Designer** tab.
+    Name and Owner fields.<br/>
+    
+    <img src="images/image62.png"/><br/>
+    
+8. The new form designer will let you cut and paste fields. Select the **Approver** field and click on the **Cut** button.4
+   
+   <img src="images/image63.png"/><br/>
+   
+9. Select the **Owner** field and click **Paste**.<br/>
+
+   <img src="images/image64.png"/><br/>
+   
+10. The **Approval** field will be moved to the bottom.<br/>
+
+    <img src="images/image65.png"/><br/>
+    
+11. Click **Save**.<br/>
+
+    <img src="images/image66.png"/><br/>
+    
+12. Click **Publish**.<br/>
+
+    <img src="images/image67.png"/><br/>
+    
+13. Close the **Form Designer** tab.<br/>
 
 Task 2: Modify the view
 
