@@ -19,7 +19,7 @@ Copyright</br>
 
 This is the third lab in a five-part series covering Power Apps, Common Data Service, Power Automate and Power BI. The
 assumption is that you have successfully completed the first two modules, or at least the initial part of setting up an
-environment as described in the overview – “ **00 - AppInADay Lab Overview.pdf** ”.
+environment as described in the overview – “ **00 - AppInADay Lab Overview** ”.
 
 If you have not completed the previous two modules, you can use the partially completed version of the lab package in
 the “\Completed\Module2” folder. Follow the instructions in the document “Importing Module 2 Completed” before
@@ -53,8 +53,6 @@ In the first lab module, you built a Power Apps Canvas application for an organi
 employees go through a hardware refresh cycle. The application let employees place a request for a device using the
 
 
-© 2020 Microsoft Corporation 2 | P a g e
-
 Power Apps app that you built. In the second lab module, using a custom entity you created in the Common Data Service
 lab, you stored that request for processing.
 
@@ -86,9 +84,8 @@ For more details on Model-driven apps and the differences between Canvas apps an
 announcement at Announcement.
 
 
-**3 |** P a g e ©20 20 Microsoft Corporation
 
-### Exercise 1: Create Application and add Fields to the Device Order Entity....................................................................................................
+### Exercise 1: Create Application and add Fields to the Device Order Entity
 
 In this exercise, you will be creating a standalone Model-driven application that will leverage the same Device Request
 entity you created in the Common Data Service in Lab 2.
@@ -106,8 +103,6 @@ to navigate between the components (Entity views, Dashboards and other visual co
     adding components in to build the app.
 
 
-© 2020 Microsoft Corporation 4 | P a g e
-
 ```
 Note : When building a real app, you would also upload an image to be used as the App Tile. The App Tile is seen by
 the user in the list of all their applications.
@@ -121,7 +116,6 @@ Next, you will build a Site Map for the application, the completed Site Map will
     user to navigate between the components.
 
 
-**5 |** P a g e ©20 20 Microsoft Corporation
 
 ```
 Note: The properties panel on the right will only show if you click on the New Area on the left.
@@ -140,7 +134,7 @@ Note: The properties panel on the right will only show if you click on the New S
     **nav_device_orders** for **ID**.
 
 
-© 2020 Microsoft Corporation 6 | P a g e
+
 
 10. Click **Save and Close.**
 11. Click **Save** again, this time in the App Designer.
@@ -164,18 +158,11 @@ the user’s ordering experience was, and will manually check this once they sen
 update to automate sending a survey in a future release.
 
 1. Navigate to Make Power Apps
-
-
-**7 |** P a g e ©20 20 Microsoft Corporation
-
 2. Expand **Data** , select **Entities** , search for **Device Order** and click on it.
 3. Make sure you have the **Fields** tab selected and click **Add Field**.
 4. Enter **Capital Approved** for **Display Name** , select **Two Options** for **Data Type** and click **Done**. We are using a
     Two Option data type here because when we use it as a Step in the Business Process, we want to be able to simply
     mark it completed. Two Options are essentially a true or false field.
-
-
-© 2020 Microsoft Corporation 8 | P a g e
 
 5. Create 4 more **Two Option** fields and name them **Device Received, Device Configured, Send Survey** , and
     **Device Delivered**.
@@ -184,8 +171,6 @@ update to automate sending a survey in a future release.
     Process later in the lab.
 7. Click **Save Entity**.
 
-
-**9 |** P a g e ©20 20 Microsoft Corporation
 
 ### Exercise 2: Business Process Flow
 
@@ -213,8 +198,6 @@ created for a full implementation of the scenario, to save time you may skip the
 The completed Business Process Flow will look like the image below.
 
 
-© 2020 Microsoft Corporation 10 | P a g e
-
 Task 1: Create business process flow
 
 1. Select **Flows**.
@@ -226,63 +209,35 @@ Task 1: Create business process flow
     Order. Here we choose Device Procurement Process. Note: After you click OK, a new window will be loaded with
     the designer. If you have popup blockers enabled this might be blocked. The window might also not immediately
     have focus and you might have to manually bring it into focus.
-
-
-**11 |** P a g e ©20 20 Microsoft Corporation
-
 4. Select the **New Stage** and change the Display Name to **Device Requested** and click **Apply**.
 5. Click **Details.**
 6. Select the **Data Step** , select **Request Date** for Data Field and click **Apply**. The Step Name will auto-filled for you.
 7. Click **Add** and select **Add Data Step**.
-
-
-© 2020 Microsoft Corporation 12 | P a g e
-
 8. Click on the small + under Data Step #1.
 9. Select **Approval Status** for Data field and click **Apply**.
 10. Add another Data Step, select **Price** for Data Field and click **Apply**.
-
-
-**13 |** P a g e ©20 20 Microsoft Corporation
-
 11. Select the **Components** tab.
 12. Drag **Stage** to the canvas and place to the right of the **Device Requested** stage.
 13. Select the new stage, change the Display Name to **Place Order** and click **Apply**.
 14. Click **Details**.
-
-
-© 2020 Microsoft Corporation 14 | P a g e
-
 15. Select the existing Data Step, select **Estimated Ship Date** for Data Field, and click **Apply**.
 16. Select the **Components** tab, drag **Data Step** to the canvas and place is under the **Estimated Ship Date** step.
 17. Select **Supplier Order ID** for Data Field, check the **Required** field to and click **Apply**. Remember from before this
     field isn’t required, but by checking this here, we will require it to be filled out before they can advance to the next
     stage. It won’t, however, block saving the record if there isn’t a data value populated like it would if it was marked
     required on the field definition.
-
-
-**15 |** P a g e ©20 20 Microsoft Corporation
-
 **NOTE: All steps from here onwards until you reach Task 2 are OPTIONAL. These steps add two more stages to the
 business process using the same technique you learned above. You may skip ahead to Task 2 to add a branch
 condition.**
-
 18. Select the **Components** tab and drag **Stage** to the right side of the **Place Order** stage.
 19. Select the new stage, change the Display name to **Receive Device** and click **Apply**.
 20. Click **Details**.
 21. Select the existing Data Step and select **Device Received** for Data Field and click **Apply**.
-
-
-© 2020 Microsoft Corporation 16 | P a g e
-
 22. Select the **Components** tab, drag **Data Step** to the **Receive Device** stage and place it under the **Device Received**
     step.
 23. Select **Device Configured** for Data Field and click **Apply**.
 24. Add another stage and name it **Distribute Device**.
 25. Add two data steps **Device Delivered** and **Send Survey**.
-
-
-**17 |** P a g e ©20 20 Microsoft Corporation
 
 Task 2: Add a branch condition
 
@@ -296,18 +251,10 @@ the order. In this task, you will see how we can modify the flow we built to acc
     **Apply**. It’s important to note that fields you use in the rules on the condition must be in the prior Stages steps.
     That is one of the reasons we put the price in there previously.
 4. Click **Save**.
-
-
-© 2020 Microsoft Corporation 18 | P a g e
-
 5. A new stage will be added.
 6. Select the new stage, change the Display Name to **Capital Approval** and click **Apply**.
 7. Click **Details**.
 8. Select the existing Data Step, select **Capital Approved** for Data Field and click **Apply**.
-
-
-**19 |** P a g e ©20 20 Microsoft Corporation
-
 9. Click **Save**.
 10. Click **Activate**.
 11. Confirm the activation.
@@ -315,8 +262,6 @@ the order. In this task, you will see how we can modify the flow we built to acc
 13. Select **Solutions**.
 14. **Publish All Customizations**.
 
-
-© 2020 Microsoft Corporation 20 | P a g e
 
 ### Exercise 3: Form and View Modification
 
@@ -337,27 +282,16 @@ Note: The form designer is being modernized, you can read more here Overview of 
 designer.
 ```
 4. If you are required to sign in again, do so.
-
-
-**21 |** P a g e ©20 20 Microsoft Corporation
-
 5. Search for **Approver** field and drag it to the form.
 6. Place the **Approver** field above the Device Name field.
 7. The new form designer will let you reposition fields. Drag the **Approver** field and place it between the Device
     Name and Owner fields.
 8. The new form designer will let you cut and paste fields. Select the **Approver** field and click on the **Cut** button.
-
-
-© 2020 Microsoft Corporation 22 | P a g e
-
 9. Select the **Owner** field and click **Paste**.
 10. The **Approval** field will be moved to the bottom.
 11. Click **Save**.
 12. Click **Publish**.
 13. Close the **Form Designer** tab.
-
-
-**23 |** P a g e ©20 20 Microsoft Corporation
 
 Task 2: Modify the view
 
@@ -365,23 +299,13 @@ Task 2: Modify the view
 2. Click the **Approval Status** field once (you do not need to double click).
 3. The new column will be added to the view.
 4. Click on the **+ Add Column** button.
-
-
-© 2020 Microsoft Corporation 24 | P a g e
-
 5. Select **Estimated Ship Date.**
 6. Click + column again and change from **Default** to **All**.
 7. Add **Price** and **Status** to the View.
 8. Click **Save.**
-
-
-**25 |** P a g e ©20 20 Microsoft Corporation
-
 9. **Publish** the View.
 10. Click on the back button.
 
-
-© 2020 Microsoft Corporation 26 | P a g e
 
 ### Exercise 4: Test the application
 
@@ -395,40 +319,22 @@ Task 1: Test the application
 3. Start a new web browser instance and navigate to Make Power Apps. Do not close the Model-driven application.
 4. Select **Apps** , select the Device Ordering application you created in module 2, and click **Play**.
 5. Select two devices, make sure one of the devices is priced over $1,000 and click **Compare**.
-
-
-**27 |** P a g e ©20 20 Microsoft Corporation
-
 6. Select the device with the price over $1k and click **Submit**.
 7. Click OK. Note that if you did not choose to create the submission success screen in a previous module that this
     option will not exist. You will need complete steps 3 and 4 (above) in order to continue.
 8. Select two more devices and click Compare.
-
-
-© 2020 Microsoft Corporation 28 | P a g e
-
 9. Select a device with a price under $1k, provide approver email (or leave in the auto-populated manager email)
     and click **Submit**.
 10. Go back to the Model-driven application you created, sort the orders by **Created On** column, and you should see
     the two devices you ordered using the Power Apps Canvas App.
 11. Open the one priced over $1k.
-
-
-**29 |** P a g e ©20 20 Microsoft Corporation
-
 12. The **Business Process Flow** will now have **5** stages. This is because this order costs more than $1k and needs
     **Capital Approval**.
 13. Click **Device Orders**.
 14. Click on the other order you created.
-
-
-© 2020 Microsoft Corporation 30 | P a g e
-
 15. The **Business Process Flow** for this order will have **4** stages; this is because this order does not require **Capital**
     **Approval**.
 
-
-**31 |** P a g e ©20 20 Microsoft Corporation
 
 ### Lab survey
 
@@ -446,8 +352,6 @@ App in a Day introduces some of the key functionalities available in Power Apps,
 Common Data Service. For an up to date list of learning references, see Power Apps Resources and Power Automate
 Resources and Power BI Resources.
 
-
-© 2020 Microsoft Corporation 32 | P a g e
 
 ## Copyright
 
