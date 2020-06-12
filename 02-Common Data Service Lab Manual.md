@@ -1,6 +1,6 @@
 # Module 2: Common Data Service
 
-### Contents
+## Contents
 ####  Common Data Service
 Lab Prerequisites 
 Before you begin
