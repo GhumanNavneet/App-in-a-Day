@@ -517,29 +517,71 @@ designer.
 
 In this exercise, we are going to test the application you just built.
 
-Task 1: Test the application
+### Task 1: Test the application
 
-1. Select **Apps** , select the Device Procurement application and click **Play**.
-2. The application will start. The **Active Device Orders** view will load.
-    **Note: If you don’t show any data in the list, run the Device Ordering canvas app you built and submit some orders.**
-3. Start a new web browser instance and navigate to Make Power Apps. Do not close the Model-driven application.
-4. Select **Apps** , select the Device Ordering application you created in module 2, and click **Play**.
-5. Select two devices, make sure one of the devices is priced over $1,000 and click **Compare**.
-6. Select the device with the price over $1k and click **Submit**.
+1. Select **Apps** , select the Device Procurement application and click **Play**.<br/>
+
+    <img src="images/image78.png"/><br/>
+    
+2. The application will start. The **Active Device Orders** view will load.<br/>
+    **Note: If you don’t show any data in the list, run the Device Ordering canvas app you built and submit some orders.**<br/>
+    
+     <img src="images/image79.png"/><br/>
+     
+3. Start a new web browser instance and navigate to Make Power Apps. Do not close the Model-driven application.<br/>
+
+4. Select **Apps** , select the Device Ordering application you created in module 2, and click **Play**.<br/>
+
+    <img src="images/image80.png"/><br/>
+    
+5. Select two devices, make sure one of the devices is priced over $1,000 and click **Compare**.<br/>
+  
+   <img src="images/image81.png"/><br/>
+     
+6. Select the device with the price over $1k and click **Submit**.<br/>
+
+   <img src="images/image82.png"/><br/>
+   
 7. Click OK. Note that if you did not choose to create the submission success screen in a previous module that this
-    option will not exist. You will need complete steps 3 and 4 (above) in order to continue.
-8. Select two more devices and click Compare.
+    option will not exist. You will need complete steps 3 and 4 (above) in order to continue.<br/>
+    
+   <img src="images/image83.png"/><br/>
+    
+8. Select two more devices and click Compare.<br/>
+
+   <img src="images/image84.png"/><br/>
+    
 9. Select a device with a price under $1k, provide approver email (or leave in the auto-populated manager email)
-    and click **Submit**.
+    and click **Submit**.<br/>
+    
+    <img src="images/image85.png"/><br/>
+    
 10. Go back to the Model-driven application you created, sort the orders by **Created On** column, and you should see
-    the two devices you ordered using the Power Apps Canvas App.
-11. Open the one priced over $1k.
+    the two devices you ordered using the Power Apps Canvas App.<br/>
+    
+     <img src="images/image86.png"/><br/>
+     
+11. Open the one priced over $1k.<br/>
+   
+    <img src="images/image87.png"/><br/>
+     
 12. The **Business Process Flow** will now have **5** stages. This is because this order costs more than $1k and needs
-    **Capital Approval**.
-13. Click **Device Orders**.
-14. Click on the other order you created.
+    **Capital Approval**.<br/>
+    
+    <img src="images/image88.png"/><br/>
+     
+13. Click **Device Orders**.<br/>
+
+     <img src="images/image89.png"/><br/>
+     
+14. Click on the other order you created.<br/>
+    
+    <img src="images/image90.png"/><br/>
+    
 15. The **Business Process Flow** for this order will have **4** stages; this is because this order does not require **Capital**
-    **Approval**.
+    **Approval**.<br/>
+    
+    <img src="images/image91.png"/><br/>
 
 
 ### Lab survey
