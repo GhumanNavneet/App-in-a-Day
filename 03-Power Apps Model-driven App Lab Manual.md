@@ -156,7 +156,7 @@ Note: The properties panel on the right will only show if you click on the New S
    
 10. Click **Save and Close.**</br>
 
-     <img src="images/image12.png"/><br/>
+    <img src="images/image12.png"/><br/>
    
 11. Click **Save** again, this time in the App Designer.</br>
  
@@ -239,47 +239,119 @@ created for a full implementation of the scenario, to save time you may skip the
 
 The completed Business Process Flow will look like the image below.
 
+<img src="images/image21.png"/><br/>
 
 Task 1: Create business process flow
 
-1. Select **Flows**.
-2. Select the **Business Process Flow** tab and click **New**.
+1. Select **Flows**.<br/>
+ 
+  <img src="images/image22.png"/><br/>
+
+2. Select the **Business Process Flow** tab and click **New**.<br/>
+
+   <img src="images/image23.png"/><br/>
+ 
 3. Enter **Device Procurement Process** for Flow Name, type and then select **Device Order** for Entity, and click
     **Create**. When you create the Business Process Flow behind the scenes it creates another entity with the same
     name as the Business Process Flow to track the progress of each business process on the record. Because of this,
     choose your name carefully, for example, you wouldn’t want to use the same name as your entity e.g. Device
     Order. Here we choose Device Procurement Process. Note: After you click OK, a new window will be loaded with
     the designer. If you have popup blockers enabled this might be blocked. The window might also not immediately
-    have focus and you might have to manually bring it into focus.
-4. Select the **New Stage** and change the Display Name to **Device Requested** and click **Apply**.
-5. Click **Details.**
-6. Select the **Data Step** , select **Request Date** for Data Field and click **Apply**. The Step Name will auto-filled for you.
-7. Click **Add** and select **Add Data Step**.
-8. Click on the small + under Data Step #1.
-9. Select **Approval Status** for Data field and click **Apply**.
-10. Add another Data Step, select **Price** for Data Field and click **Apply**.
-11. Select the **Components** tab.
-12. Drag **Stage** to the canvas and place to the right of the **Device Requested** stage.
-13. Select the new stage, change the Display Name to **Place Order** and click **Apply**.
-14. Click **Details**.
-15. Select the existing Data Step, select **Estimated Ship Date** for Data Field, and click **Apply**.
-16. Select the **Components** tab, drag **Data Step** to the canvas and place is under the **Estimated Ship Date** step.
+    have focus and you might have to manually bring it into focus.<br/>
+    
+    <img src="images/image24.png"/><br/>
+    
+4. Select the **New Stage** and change the Display Name to **Device Requested** and click **Apply**.<br/>
+
+   <img src="images/image25.png"/><br/>
+   
+5. Click **Details.**<br/>
+ 
+   <img src="images/image26.png"/><br/>
+   
+6. Select the **Data Step** , select **Request Date** for Data Field and click **Apply**. The Step Name will auto-filled for you.<br/>
+
+   <img src="images/image27.png"/><br/>
+   
+7. Click **Add** and select **Add Data Step**.<br/>
+
+   <img src="images/image28.png"/><br/>
+  
+8. Click on the small + under Data Step #1.<br/>
+
+   <img src="images/image29.png"/><br/>
+  
+9. Select **Approval Status** for Data field and click **Apply**.<br/>
+
+   <img src="images/image30.png"/><br/>
+  
+10. Add another Data Step, select **Price** for Data Field and click **Apply**.<br/>
+
+    <img src="images/image31.png"/><br/>
+  
+11. Select the **Components** tab.<br/>
+
+    <img src="images/image32.png"/><br/>
+   
+12. Drag **Stage** to the canvas and place to the right of the **Device Requested** stage.<br/>
+
+    <img src="images/image33.png"/><br/>
+   
+13. Select the new stage, change the Display Name to **Place Order** and click **Apply**.<br/>
+
+    <img src="images/image34.png"/><br/>
+    
+14. Click **Details**.<br/>
+
+    <img src="images/image35.png"/><br/>
+    
+15. Select the existing Data Step, select **Estimated Ship Date** for Data Field, and click **Apply**.<br/>
+
+    <img src="images/image36.png"/><br/>
+   
+16. Select the **Components** tab, drag **Data Step** to the canvas and place is under the **Estimated Ship Date** step.<br/>
+
+    <img src="images/image37..png"/><br/>
+  
 17. Select **Supplier Order ID** for Data Field, check the **Required** field to and click **Apply**. Remember from before this
     field isn’t required, but by checking this here, we will require it to be filled out before they can advance to the next
     stage. It won’t, however, block saving the record if there isn’t a data value populated like it would if it was marked
-    required on the field definition.
+    required on the field definition.<br/>
+    
+    <img src="images/image38.png"/><br/>
+    
 **NOTE: All steps from here onwards until you reach Task 2 are OPTIONAL. These steps add two more stages to the
 business process using the same technique you learned above. You may skip ahead to Task 2 to add a branch
 condition.**
-18. Select the **Components** tab and drag **Stage** to the right side of the **Place Order** stage.
-19. Select the new stage, change the Display name to **Receive Device** and click **Apply**.
-20. Click **Details**.
-21. Select the existing Data Step and select **Device Received** for Data Field and click **Apply**.
+
+18. Select the **Components** tab and drag **Stage** to the right side of the **Place Order** stage.<br/>
+
+    <img src="images/image39.png"/><br/>
+   
+19. Select the new stage, change the Display name to **Receive Device** and click **Apply**.<br/>
+
+    <img src="images/image40.png"/><br/>
+   
+20. Click **Details**.<br/>
+
+21. Select the existing Data Step and select **Device Received** for Data Field and click **Apply**.<br/>
+
+    <img src="images/image41.png"/><br/>
+   
 22. Select the **Components** tab, drag **Data Step** to the **Receive Device** stage and place it under the **Device Received**
-    step.
-23. Select **Device Configured** for Data Field and click **Apply**.
-24. Add another stage and name it **Distribute Device**.
-25. Add two data steps **Device Delivered** and **Send Survey**.
+    step.<br/>
+    
+    <img src="images/image42.png"/><br/>
+    
+23. Select **Device Configured** for Data Field and click **Apply**.<br/>
+
+    <img src="images/image43.png"/><br/>
+   
+24. Add another stage and name it **Distribute Device**.<br/>
+   
+25. Add two data steps **Device Delivered** and **Send Survey**.<br/>
+  
+    <img src="images/image44.png"/><br/>
 
 Task 2: Add a branch condition
 
