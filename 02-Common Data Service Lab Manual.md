@@ -2,60 +2,60 @@
 
 ## Contents
 ####  Common Data Service
-Lab Prerequisites 
-Before you begin
-Overview
-Goals for this lab
+Lab Prerequisites</br>
+Before you begin</br>
+Overview</br>
+Goals for this lab</br>
 
 #### Exercise 1: Exploring Common Data Service
-Task 1: Explore standard entities
-Task 2: Explore standard option sets
+Task 1: Explore standard entities</br>
+Task 2: Explore standard option sets</br>
 
 #### Exercise 2: Custom Entities and Fields 
-Task 1: Create a custom entity
-Task 2: Create custom fields
-Task 3: Create a calculated field
-Task 4: Create a business rule
+Task 1: Create a custom entity</br>
+Task 2: Create custom fields</br>
+Task 3: Create a calculated field</br>
+Task 4: Create a business rule</br>
 
 #### Exercise 3: Connect the data from the Canvas App
-Task 1: Add CDS entity as a data source to the app
-Task 2: Create the edit form
-Task 3: Configure the title field
-Task 4: Configure the price field
-Task 5: Configure the approval field
-Task 6: Configure the Comment field
-Task 7: Configure the Requested By field
-Task 8: Configure the requested date field
-Task 9: Add a button to submit the form
-Task 10: Test the form
-Task 11: Verify a new item was added to the Device Order entity
-Task 12: [Optional] Navigate to confirmation screen after the Form submit is successful
-Lab survey
-References
+Task 1: Add CDS entity as a data source to the app</br>
+Task 2: Create the edit form</br>
+Task 3: Configure the title field</br>
+Task 4: Configure the price field</br>
+Task 5: Configure the approval field</br>
+Task 6: Configure the Comment field</br>
+Task 7: Configure the Requested By field</br>
+Task 8: Configure the requested date field</br>
+Task 9: Add a button to submit the form</br>
+Task 10: Test the form</br>
+Task 11: Verify a new item was added to the Device Order entity</br>
+Task 12: [Optional] Navigate to confirmation screen after the Form submit is successful</br>
+Lab survey</br>
+References</br>
 Copyright
 
 ## Common Data Service
 ### Lab Prerequisites
-This is the second lab in a series covering Power Apps Canvas Apps, Common Data Service, Power Apps Model-driven Apps, Power Automate, and Power BI. The assumption is that you have successfully completed the initial part of setting up an environment as described in the overview document – “00-AppInADay Lab Overview.pdf”.
+This is the second lab in a series covering Power Apps Canvas Apps, Common Data Service, Power Apps Model-driven Apps, Power Automate, and Power BI. The assumption is that you have successfully completed the initial part of setting up an environment as described in the overview document – “00-AppInADay Lab Overview.pdf”.</br>
 
-If you have not completed building the Power Apps Canvas App in Module 1, you can use the partially completed version of the lab package in the “\Completed\Module1” folder. Follow the instructions in the document “Importing Module 1 Completed” before proceeding with this module.
+If you have not completed building the Power Apps Canvas App in Module 1, you can use the partially completed version of the lab package in the “\Completed\Module1” folder. Follow the instructions in the document “Importing Module 1 Completed” before proceeding with this module.</br>
 
 ### Before you begin
-You must be connected to the internet.
-1. **Have a Test Environment with permission to create Common Data Service database**: You should have gone through the steps to create a new environment using the Admin center. In this lab, you will create a database in this environment if you haven’t already created one.
-2. **Sign-in to Power Apps**: Go to Power Apps and **sign in** with the same account you used to complete the first lab. Make sure you switch to the environment where you created the app.
+You must be connected to the internet.</br>
+1. **Have a Test Environment with permission to create Common Data Service database**: You should have gone through the steps to create a new environment using the Admin center. In this lab, you will create a database in this environment if you haven’t already created one.</br>
+2. **Sign-in to Power Apps**: Go to Power Apps and **sign in** with the same account you used to complete the first lab. Make sure you switch to the environment where you created the app.</br>
 
 ### Overview
-The Common Data Service (CDS) adds data storage and modeling capabilities to Power Apps that is scalable and easy to provision. In this module, you will be using Common Data Service to model and store the data from the device ordering canvas app that you built in module 1. In the next module, you will be building a model-driven application using the same data that will be used by the back-office staff to process the device orders. These apps that you build on CDS use the same technology framework (Common Data Service) that Microsoft Dynamics 365 apps are built-on.
+The Common Data Service (CDS) adds data storage and modeling capabilities to Power Apps that is scalable and easy to provision. In this module, you will be using Common Data Service to model and store the data from the device ordering canvas app that you built in module 1. In the next module, you will be building a model-driven application using the same data that will be used by the back-office staff to process the device orders. These apps that you build on CDS use the same technology framework (Common Data Service) that Microsoft Dynamics 365 apps are built-on.</br>
 
 ### Goals for this lab
 Images
 
 ## Exercise 1: Exploring Common Data Service
 In this exercise, you will explore Common Data Service standard entities. Entities in CDS are like tables in a database or worksheets in Microsoft Excel. Entities can be connected together with relationships that model real world interactions between the entities. Each entity contains multiple records (rows), each having data fields. For example, a “Project” entity may have fields such as Name, Due Date, Status, etc. and it may be related to a “Project Owner” entity which might have
-fields such as Name, Email, etc.
+fields such as Name, Email, etc.</br>
 
-CDS abstracts a lot of the typical low-level database management work to make it easier for you to configure a custom data model that fits your application.
+CDS abstracts a lot of the typical low-level database management work to make it easier for you to configure a custom data model that fits your application.</br>
 
 In addition to allowing for the creation of custom entities, CDS contains a Common Data Model (CDM) consisting of hundreds of standard entity definitions. You can find the current CDM schema at Github Microsoft CDM and you can browse the CDM using the CDM Visual Entity Navigator located here Github CDM. You can read more about the CDM here Common Data Model Overview.</br>
 
