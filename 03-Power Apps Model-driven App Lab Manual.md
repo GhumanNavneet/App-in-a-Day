@@ -470,18 +470,47 @@ designer.
     
 13. Close the **Form Designer** tab.<br/>
 
-Task 2: Modify the view
+### Task 2: Modify the view
 
-1. Select the **Views** tab and click on the **Active Device Orders** view to open it.
-2. Click the **Approval Status** field once (you do not need to double click).
-3. The new column will be added to the view.
-4. Click on the **+ Add Column** button.
-5. Select **Estimated Ship Date.**
-6. Click + column again and change from **Default** to **All**.
-7. Add **Price** and **Status** to the View.
-8. Click **Save.**
-9. **Publish** the View.
-10. Click on the back button.
+1. Select the **Views** tab and click on the **Active Device Orders** view to open it.<br/>
+    
+   <img src="images/image68.png"/><br/>
+     
+2. Click the **Approval Status** field once (you do not need to double click).<br/>
+ 
+   <img src="images/image69.png"/><br/>
+
+3. The new column will be added to the view.<br/>
+
+   <img src="images/image70.png"/><br/>
+    
+4. Click on the **+ Add Column** button.<br/>
+
+   <img src="images/image71.png"/><br/>
+
+5. Select **Estimated Ship Date.**<br/>
+
+   <img src="images/image72.png"/><br/>
+
+6. Click + column again and change from **Default** to **All**.<br/>
+
+   <img src="images/image73.png"/><br/>
+    
+7. Add **Price** and **Status** to the View.<br/>
+    
+   <img src="images/image74.png"/><br/>
+    
+8. Click **Save.**<br/>
+
+   <img src="images/image75.png"/><br/>
+    
+9. **Publish** the View.<br/>
+  
+   <img src="images/image76.png"/><br/>
+   
+10. Click on the back button.<br/>
+  
+    <img src="images/image77.png"/><br/>
 
 
 ### Exercise 4: Test the application
