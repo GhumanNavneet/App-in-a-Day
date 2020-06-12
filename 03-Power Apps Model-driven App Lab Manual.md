@@ -122,12 +122,12 @@ Next, you will build a Site Map for the application, the completed Site Map will
 
 5. Click **Edit Site Map**. This will launch the designer that will let you modify the App navigation.</br>
 
-    <img src="images/image07.png"/><br/>
+     <img src="images/image07.png"/><br/>
 6. Select the **New Area** label, in the properties rename it **Back Office** and enter **nav_backoffice** for ID**.** If you were
     building a more complex application, you could use Areas to group together related items making it easy for the
     user to navigate between the components.</br>
     
-    <img src="images/image08.png"/><br/>
+     <img src="images/image08.png"/><br/>
     
 
 
@@ -137,14 +137,14 @@ Note: The properties panel on the right will only show if you click on the New A
 ```
 7. Select the **New Group** enter **Orders** for Title, and **nav_ordersgroup** for ID.</br>
 
-   <img src="images/image09.png"/><br/>
+     <img src="images/image09.png"/><br/>
     
 ```
 Note: The properties panel on the right will only show if you click on the New Group on the left.
 ```
 8. Select the **New Subarea**.</br>
 
-   <img src="images/image10.png"/><br/>
+     <img src="images/image10.png"/><br/>
 
 ```
 Note: The properties panel on the right will only show if you click on the New Subarea on the left.
@@ -152,19 +152,19 @@ Note: The properties panel on the right will only show if you click on the New S
 9. Set the **Entity** for **Type** , select **Device Order** for **Entity** , enter **Device Orders** for **Title** and enter
     **nav_device_orders** for **ID**.</br>
     
-   <img src="images/image11.png"/><br/>
+     <img src="images/image11.png"/><br/>
    
 10. Click **Save and Close.**</br>
 
-   <img src="images/image12.png"/><br/>
+     <img src="images/image12.png"/><br/>
    
 11. Click **Save** again, this time in the App Designer.</br>
-
-   <img src="images/image13.png"/><br/>
+ 
+    <img src="images/image13.png"/><br/>
    
 12. **Publish** the application.</br>
 
-   <img src="images/image14.png"/><br/>
+    <img src="images/image14.png"/><br/>
    
 13. Click **Save and Close**.</br>
 
