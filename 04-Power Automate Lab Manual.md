@@ -197,50 +197,54 @@ In this exercise, you will add two actions to the “if no” branch.</br>
 
 ### Task 1: Add actions
 1. If you don’t already have the flow open, open it in edit mode.</br>
-   <img src="images/img55.png"/><br/>
-2. In the If no branch, click **Add an action****.</br>
    <img src="images/img54.png"/><br/>
+2. In the If no branch, click **Add an action****.</br>
+   <img src="images/img55.png"/><br/>
 3. Search for **Common Data Service** and select **Common Data Service – Update a record**.</br>
-   <img src="images/img53.png"/><br/>
-4. Select **Current** for **environment, Device Orders** for **Entity Name**, select **Device Order** for **Record Identifier**, and click **Show advanced options**</br>
    <img src="images/img56.png"/><br/>
-5. Select **Reject** for **Approval Status Value**.</br>
+4. Select **Current** for **environment, Device Orders** for **Entity Name**, select **Device Order** for **Record Identifier**, and click **Show advanced options**</br>
    <img src="images/img57.png"/><br/>
+5. Select **Reject** for **Approval Status Value**.</br>
+   <img src="images/img58.png"/><br/>
 6. Click **Add an action**.</br>   
-<img src="images/img58.png"/><br/>
+<img src="images/img59.png"/><br/>
 7. Search for **send email** and select **Send an email (v2) - Office 365 Outlook**.</br>
-   <img src="images/img59.png"/><br/>
-8. Provide the information shown on the image below. This will send an email to the requestor informing them that their device request was not approved. Select Requested By and Device Name from under the **When a record is created** header.</br>
    <img src="images/img60.png"/><br/>
+8. Provide the information shown on the image below. This will send an email to the requestor informing them that their device request was not approved. Select Requested By and Device Name from under the **When a record is created** header.</br>
+   <img src="images/img61.png"/><br/>
 9. **Save** the flow.</br>
 
 ### Task 2: Test the updated Flow
 1. Click **Test** in the top right of the flow editor and start the Flow.</br>
 2. Run the Device Ordering app -> Select a device and submit an approval request.</br>
 3. You should receive an email with options to Approve or **Reject** the request. Select Reject this time and enter some comments, such as “Not eligible for new device.” Click Submit.</br>
-   <img src="images/img61.png"/><br/>
-4. Confirm that the requestor receives an email informing them that their device approval request was rejected.</br>
    <img src="images/img62.png"/><br/>
-5. Navigate to Make Power Apps select **Apps** and start the **Device Procurement** application.</br>
+4. Confirm that the requestor receives an email informing them that their device approval request was rejected.</br>
    <img src="images/img63.png"/><br/>
+5. Navigate to Make Power Apps select **Apps** and start the **Device Procurement** application.</br>
+   <img src="images/img64.png"/><br/>
 6. Device Orders will now have the Approval Status.</br>
-<img src="images/img64.png"/><br/>
+<img src="images/img65.png"/><br/>
 
 ### Task 3: Visit the approval center
 1. Use the Device Ordering app to **submit a few more approval requests**.</br>
 2. Navigate to Power Automate and make sure you are in the correct environment. Login with your lab credentials if prompted.</br>
 3. Expand **Action items** and select **Approvals**.</br>
+<img src="images/img66.png"/><br/>
 4. Notice that all pending approval requests are visible.</br>
+<img src="images/img67.png"/><br/>
 5. Go ahead and approve or reject a request from this screen. The details are displayed in the right pane where you] can **enter comments** and **Confirm**.</br>
+<img src="images/img68.png"/><br/>
 6. The request will no longer be visible as it has been processed.</br>
-
 **Note:** All approval requests sent to the current logged on user will be visible in the Approvals Center. This includes approvalssent from any app or flow.</br>
-
 7. You can also use the Approvals Center to view all requests that you have sent and are **Awaiting response** from the approver. Select the **Sent requests** tab at the top to view all requests that you have sent.</br>
 8. Open the **Power Automate mobile app** on your mobile device.</br>
 9. Login and switch to the environment where the flow is deployed.</br>
+<img src="images/img69.png"/><br/>
 10. Select **Approvals** in the top right and view all pending approvals.</br>
+<img src="images/img70.png"/><br/>
 11. You can quickly approve or reject these pending requests from this screen.</br>
+<img src="images/img71.png"/><br/>
 12. If you have push notifications turned on and are signed into the flow mobile app – when you receive a new Approval request it will trigger a push notification on your phone. You can give this a shot.</br></br>
 Congratulations! You have successfully completed this lab. You have created your Power Apps app and flow and connected them to a Common Data Service entity. Now you are ready to build your own apps and workflows.</br></br>
 
