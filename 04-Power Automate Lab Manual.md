@@ -154,7 +154,7 @@ You will now add the send email action to the If Yes branch.</br>
 8. Click on the **Code View** button.</br>
    <img src="images/img42.png"/><br/>
 9. Set the **Body** value as shown below. Select **Device Name** and **Estimated Ship Date** from underneath the **When a record is created** header.</br>
-   <img src="images/img41.png"/><br/>
+   <img src="images/img43.png"/><br/>
 **Note:** If you do not have an Office 365 mailbox setup, you can use one of the other connectors to send the email, such as Outlook.com, Gmail or SendGrid.
 10. Click **Save**.</br>
 
@@ -167,30 +167,30 @@ d. Verify that the Common Data Service record was updated, and an email was sent
 
 ###  Task 1: Test the Flow
 **Note:** When a new device record is added to the Device Order entity in CDS, it may take up to ten minutes for the flow to trigger. To ensure the flow runs immediately, select the **Test** option in the top right and select the **“I’ll perform the trigger action”** option. Then go ahead and submit a device request. The flow should run immediately.</br>
-   <img src="images/img43.png"/><br/>
-1. Select **I’ll Perform the Trigger Action** and click **Save & Test**.</br>
    <img src="images/img44.png"/><br/>
+1. Select **I’ll Perform the Trigger Action** and click **Save & Test**.</br>
+   <img src="images/img45.png"/><br/>
 2. To submit a device request, go to Make Power Apps</br>
 3. Select **Apps** and start the **Device Ordering App**.</br>
-   <img src="images/img45.png"/><br/>
-4. Select a few devices and click Compare.</br>
    <img src="images/img46.png"/><br/>
-5. Select one of the devices, provide email for Approver.</br>
+4. Select a few devices and click Compare.</br>
    <img src="images/img47.png"/><br/>
-6. Provide a comment and click Submit device request.</br>
+5. Select one of the devices, provide email for Approver.</br>
    <img src="images/img48.png"/><br/>
+6. Provide a comment and click Submit device request.</br>
+   <img src="images/img49.png"/><br/>
 7. Click **OK**.</br>
 8. The flow will run and send email to the manager email you provided. The request for approval email will look like the image below; it will include **Device information, Price, Department Contribution (the calculated field), and the Requester Comment**.</br>
 
 **REMINDER:** If the flow does not run immediately, please wait, it may take up to ten minutes for the flow to be triggered. To ensure the flow runs immediately, see note above - select the **Test** option in the top right and select the “I’ll perform the trigger action” option. Then go ahead and submit a device request. The flow should run immediately. The email, however, may take a few minutes to appear regardless of when the flow starts.</br>
-   <img src="images/img49.png"/><br/>
+   <img src="images/img0.png"/><br/>
 9. Click **Approve**.</br>
 10. Add a comment and click **Submit**.</br>
-   <img src="images/img50.png"/><br/>
-11. The flow will continue to run; it will update the record and send an email to the requestor. The email sent to the requester will look like the image below.</br>
    <img src="images/img51.png"/><br/>
-12. Check the flow, you will notice that the flow is now marked as **Succeeded** in the run history.</br>
+11. The flow will continue to run; it will update the record and send an email to the requestor. The email sent to the requester will look like the image below.</br>
    <img src="images/img52.png"/><br/>
+12. Check the flow, you will notice that the flow is now marked as **Succeeded** in the run history.</br>
+   <img src="images/img53.png"/><br/>
 
 ## Exercise 4: Update the Flow
 In this exercise, you will add two actions to the “if no” branch.</br>
