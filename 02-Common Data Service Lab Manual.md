@@ -249,26 +249,37 @@ c. Approver</br>
 d. Comments</br>
 e. Requested By</br>
 f. Request Date</br>
+   <img src="images/62.png"/><br/>
 9. Close the **Fields** pane.</br>
 10. Move the form control **Form1** to the right of the screen and resize it using the drag handles such that it fits in the empty space. See picture on the right. Make sure there is enough space below the form to add a Submit button.</br>
+   <img src="images/63.png"/><br/>
 **Note:** You can always select controls, such as the Form1 control, from the tree view on the left to make sure you are selecting the correct control. To move it make sure you select the Form and not a control within the form.</br>
 11. Change the **Snap to columns** setting from 3 to 1. This will modify the layout of the edit form to be single column.</br>
+   <img src="images/64.png"/><br/>
 For more info on working with multi-column form layouts, see Working with forms layout.
 12. To create a new instance of the form when the screen is loaded. Click **CompareScreen** in left tree view pane.</br>
+   <img src="images/65.png"/><br/>
 13. Select the **OnVisible** property of the screen, enter: **NewForm(Form1)**</br>
+   <img src="images/66.png"/><br/>
 
 ### Task 3: Configure the title field
 In the next few steps, you will configure each of the form fields.</br>
 Let’s start by configuring the Title to display the manufacturer and device name for the selected device. For example, if theuser selects the Surface Pro device, we want the device order to have the title: “Microsoft – Surface Pro”.</br>
 1. Expand the **Device Name**.</br>
+   <img src="images/67.png"/><br/>
 Notice that the default card contains a few controls:</br>
 **StarVisible1:** This is a label control that has an asterisk (*) which has its Visible property set to true or false depending on whether the field is Required or not. Since the Title field was marked as Required when you configured the entity, its Required property is set to true.</br>
 **ErrorMessage1:** This is a label that is just below the main data entry field which displays error messages.</br>
 **DataCardValue1:** This is the text input control where you can enter the Title. For this scenario, we will set the title based on the selected device.</br>
 **DataCardKey1:** This is the label that displays the title of the field.</br>
+   <img src="images/68.png"/><br/>
 2. Select **Device Name DataCardValue** in the tree view. Then, open the **Advanced** tab in the right hand pane.</br>
-3. Click **Unlock** so you can customize the card For the next few steps, we will use the Advanced pane to customize control properties within the form, note that you can perform the same customizations using the property drop-down and formula bar in the top left of the studio.</br>
+   <img src="images/69.png"/><br/>
+3. Click **Unlock** so you can customize the card
+   <img src="images/70.png"/><br/>
+For the next few steps, we will use the Advanced pane to customize control properties within the form, note that you can perform the same customizations using the property drop-down and formula bar in the top left of the studio.</br>
 4. Click **More Options** button in the **Data** section of the Advanced pane.</br>
+   <img src="images/71.png"/><br/>
 5. To display the selected item in the Title field, set the **Default** property to CompareListGallery.Selected.ManufacturerName & " - " & CompareListGallery.Selected.Title</br>
 6. Click **More Options** button in the **DESIGN** section of the Advanced pane. We are going to change the Device Name field to be read only so they don’t change it.</br>
 7. Change the **DisplayMode** to **DisplayMode.View**. This will prevent users from changing the value within the text box.</br>
