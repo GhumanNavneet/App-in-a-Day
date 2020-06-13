@@ -3,10 +3,10 @@
 ## Contents
 **Power Automate**</br>
 Lab Prerequisites</br>
-**Exercise 1:** Create Approval Request Flow</br>
-**Exercise 2:** Conditional Logic</br>
-**Exercise 3:** Test the Flow</br>
-**Exercise 4:** Update the Flow</br>
+Exercise 1: Create Approval Request Flow</br>
+Exercise 2: Conditional Logic</br>
+Exercise 3: Test the Flow</br>
+Exercise 4: Update the Flow</br>
 **Lab survey**</br>
 **References**</br>
 **Copyright**</br>
@@ -20,6 +20,7 @@ If you have not completed the previous modules, you can use the partially comple
 ## Integrating a Power Apps App with Power Automate
 In this lab, you will create a flow that uses the Modern Approvals service to automate the approval workflow – it will send an email to the selected approver and take an action based on their response.</br>
 You should already have an app with these two screens:</br>
+   <img src="images/img1.png"/><br/>
 
 ## Exercise 1: Create Approval Request Flow
 The flow will trigger when a new item is added to the **Device Order** entity table in the Common Data Service.</br>
@@ -31,8 +32,11 @@ There are two ways to create a flow – from blank or from a template. In this l
 
 ### Task 1: Login on Power Apps website and create a flow
 1. Navigate to Make Power Apps and make sure you are in the correct environment.</br>
+   <img src="images/img2.png"/><br/>
 2. Select **Flows**.</br>
+   <img src="images/img3.png"/><br/>
 3. Click **New** and select **Automated – from Blank**.</br>
+   <img src="images/img4.png"/><br/>
 
 ### Task 2: Configure the trigger
 The first thing you will need to configure is the trigger, i.e. when should this flow run. A flow can be triggered:</br>
@@ -41,34 +45,52 @@ b. manually from a flow button,</br>
 c. on a fixed schedule, or</br>
 d. when an event occurs, such as a new item being added to a table, a new email arriving in a user’s inbox, a new tweet being posted that meets certain conditions, etc.</br>
 
-In this scenario, we will configure the flow to trigger when a **new item is added** to the **Device Order entity** table in the Common Data Service</br>
+In this scenario, we will configure the flow to trigger when a **new item is added** to the **Device Order entity** table in the Common Data Service</br
+
 1. Enter a name for your flow, such as – “New device approval request”</br>
+   <img src="images/img5.png"/><br/>
 2. In the **Choose your flow’s trigger** box, enter **Common Data Service** and select **When a record is created - Common Data Service**.</br>
+   <img src="images/img6.png"/><br/>
 3. Click **Create**</br>
 4. Click the **Environment** drop-down and select **Current****.</br>
 5. Click the **Entity Name** drop-down and select **Device Orders**. You can type “device orders” to search for it.</br>
 6. Click the **Scope** drop-down and select **Organization**. Scope allows you to limit when your flow will run, for example you could choose User and it would only run for orders you create. In this case you are choosing organization because you want this flow to run for records created by anyone in your entire organization.</br>
+   <img src="images/img7.png"/><br/>
 
 ### Task 3: Add action to send an approval request
 1. Click **+ New step**.</br>
+   <img src="images/img8.png"/><br/>
 2. Search for **Approvals** and select **Start and wait for an approval**.</br>
+   <img src="images/img9.png"/><br/>
 This will use the modern approval service. For more information see the blog post at Flow Modern Approvals.</br>
 3. In the **Approval type** dropdown select **Approve/Reject - First to Respond**.</br>
+   <img src="images/img10.png"/><br/>
 4. For the Title, we will add some text and one variable. This variable will contain the Device Name of the device order request. Enter **New device request for** in the **Title** text box.</br>
+   <img src="images/img11.png"/><br/>
 5. Select **Device Name** for the **Dynamic content**.</br>
+   <img src="images/img12.png"/><br/>
 **Note:** if the Dynamic content box is not visible, click the Add dynamic content button - image</br>
 6. Select the **Assigned to** field, select click **Approver**. Click on the **Add dynamic content** button to show/hide the dynamic content pane.</br>
+   <img src="images/img13.png"/><br/>
 You might get a warning message about this field being optional. Ignore it and ignore similar warnings in future.</br>
 **Note:** Recall from the earlier lab that this will be the approver’s email address.</br>
 7. Click **Show Advanced Options**.</br>
+   <img src="images/img14.png"/><br/>
 8. Select the **Requestor** field and select **Requested By**</br>
+   <img src="images/img15.png"/><br/>
 9. In the **Details** field, type **A new device has been requested** and hit <Enter>.</br>
+   <img src="images/img16.png"/><br/>
 10. Select **Device Name** from the Dynamic content pane.</br>
+   <img src="images/img17.png"/><br/>
 11. Type , **$** and select **Price**. You may need to click the **"See More"** option under the dynamic content search bar in order to see the Price option.</br>
+   <img src="images/img18.png"/><br/>
 12. Hit Enter and type **Department Contribution: $**</br>
 13. Select **Department Contribution**.</br>
+   <img src="images/img19.png"/><br/>
 14. Hit Enter, type **Comments:** and select **Comments**.</br>
+   <img src="images/img20.png"/><br/>
 15. Your **Flow** will now look like the image below.</br>
+   <img src="images/img21.png"/><br/>
 16. **Save** your flow</br>
 
 **Note:** When creating your own approval flows, you may additionally include a clickable link that will be displayed in the approval email. In this scenario, for example, you could include a link to view device details in an online catalogue. You would include the **Item link** and **Item link description**.</br></br>
@@ -79,9 +101,13 @@ In flow, you can add conditions to take different actions depending on a certain
 
 ### Task 1: Add conditional logic to flow
 1. Click **+ New step**.</br>
+   <img src="images/img22.png"/><br/>
 2. Search for **Condition** and select it.</br>
+   <img src="images/img23.png"/><br/>
 3. Click in the left edit box that says, “Choose a value” and select **Outcome** from the dynamic content pane. You may need to press the “+” icon below the edit box to hide the dynamic content pane.</br>
+   <img src="images/img24.png"/><br/>
 4. Select is **equal to** for condition and type **Approve** for **Value**.</br>
+   <img src="images/img25.png"/><br/>
 
 ### Task 2: Add conditional logic to flow
 We will now configure what actions to perform if the response is approved or not – YES branch vs. NO branch.</br>
