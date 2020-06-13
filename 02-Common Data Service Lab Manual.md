@@ -50,7 +50,7 @@ The Common Data Service (CDS) adds data storage and modeling capabilities to Pow
    <img src="images/01.jpg"/><br/>
 
 ### Goals for this lab
-   <img src="images/01.jpg"/><br/>
+   <img src="images/02.jpg"/><br/>
 
 ## Exercise 1: Exploring Common Data Service
 In this exercise, you will explore Common Data Service standard entities. Entities in CDS are like tables in a database or worksheets in Microsoft Excel. Entities can be connected together with relationships that model real world interactions between the entities. Each entity contains multiple records (rows), each having data fields. For example, a “Project” entity may have fields such as Name, Due Date, Status, etc. and it may be related to a “Project Owner” entity which might have
@@ -146,7 +146,7 @@ In this task, you will create custom fields for the Device Order entity. It may 
 5. Enter **Requested By** for **Display Name**, **RequestedBy** for **Name**, **Email** for **Data Type**, make the field **Searchable** and click **Done**.</br>
    <img src="images/23.jpg"/><br/>
 6. Now repeat the Add field process and add the following fields</br>
-   <img src="images/24.jpg"/><br/>
+   <img src="images/024.jpg"/><br/>
 7. Now we are going to create the **Approval Option Set**. We are adding this as an Option Set (as opposed to a two option) because it is likely in the future there will be more than two options for users to choose from. Click **Add Field**.</br>
    <img src="images/24.jpg"/><br/>
 8. Enter **Approval Status** for **Display Name**, **ApprovalStatus**** for **Name**, select **Option Set** for **Data Type**, and select **New Option Set** for **Option Set**.</br>
@@ -179,59 +179,58 @@ In this task, you will add a Department Contribution field and set its value to 
    <img src="images/35.jpg"/><br/>
 9. Click **Done**.</br>
 **Note on currency fields:** You might notice that there are two Department Contribution fields one with (base) next to it. Currency fields in CDS store the base currency value (this is the configured default currency for the environment) and the transaction currency (this can be selected on a record by record basis) to allow support for multi-currency transactions. Generally, you will want to make sure to pick the field without the (base) in the name. The (base) value is commonly used in reporting where you want to normalize multiple currencies to allow reporting on them in the base currency value.</br>
-   <img src="images/35.jpg"/><br/>
+   <img src="images/36.jpg"/><br/>
 
 ### Task 4: Create a business rule
 In this task, you will create a **Business rule** that will set the Estimated Delivery Date to 14 days after approval of the order.</br>
 1. Select the **Business rules** tab and click **Add business rule**.</br>
-   <img src="images/36.jpg"/><br/>
-2. Click the arrow to **Show Details**.</br>
    <img src="images/37.jpg"/><br/>
-3. Change the **Name** to **Calculate Ship Date** and click the arrow to **Hide Details**.</br>
+2. Click the arrow to **Show Details**.</br>
    <img src="images/38.jpg"/><br/>
-4. Select the **Condition**, change the name to **Check Ship Date**.</br>
+3. Change the **Name** to **Calculate Ship Date** and click the arrow to **Hide Details**.</br>
    <img src="images/39.jpg"/><br/>
+4. Select the **Condition**, change the name to **Check Ship Date**.</br>
+   <img src="images/40.jpg"/><br/>
 5. In the **Rule 1** section select **Entity** for **Source, Approved Date** for **Field, Contains Data** for **Operator** and click Apply.</br>
 **Note:** You may need to scroll down to the bottom of all scroll bars to see the Apply button. You must click Apply after any change to the properties otherwise they will revert to the prior value. The Business Rule (Text View) will automatically update after you hit apply when you are done modifying the rule.</br>
-   <img src="images/40.jpg"/><br/>
-6. Click **Add**, select **Add Set Field Value**.</br>
    <img src="images/41.jpg"/><br/>
-7. Select the True side of the condition.</br>
+6. Click **Add**, select **Add Set Field Value**.</br>
    <img src="images/42.jpg"/><br/>
-8. Enter **Set Estimated Ship Date** for **Display Name**, select **Estimated Ship Date** for **Field**, **Formula** for **Type, Approved Date** for **Field**, + for **Operator, Value** for Type, 14 for Days, and click **Apply**.</br>
+7. Select the True side of the condition.</br>
    <img src="images/43.jpg"/><br/>
-9. Click **Validate**.</br>
+8. Enter **Set Estimated Ship Date** for **Display Name**, select **Estimated Ship Date** for **Field**, **Formula** for **Type, Approved Date** for **Field**, + for **Operator, Value** for Type, 14 for Days, and click **Apply**.</br>
    <img src="images/44.jpg"/><br/>
-10. Make sure validation succeeds.</br>
+9. Click **Validate**.</br>
    <img src="images/45.jpg"/><br/>
-11. Click **Save**.</br>
+10. Make sure validation succeeds.</br>
    <img src="images/46.jpg"/><br/>
-12. Click **Activate**.</br>
+11. Click **Save**.</br>
    <img src="images/47.jpg"/><br/>
-13. Confirm activation. Business rules only execute when they are activated. In the future to make changes to rulesyou deactivate them, make the change, and then re-activate the rule.</br>
+12. Click **Activate**.</br>
    <img src="images/48.jpg"/><br/>
+13. Confirm activation. Business rules only execute when they are activated. In the future to make changes to rulesyou deactivate them, make the change, and then re-activate the rule.</br>
+   <img src="images/49.jpg"/><br/>
 14. Close the process editor browser window or tab.</br>
 15. Click **Done**. The list should refresh showing the Business Rule you just created.</br>
-   <img src="images/49.jpg"/><br/>
-16. Your Device Order entity will have one Business Rule.</br>
    <img src="images/50.jpg"/><br/>
+16. Your Device Order entity will have one Business Rule.</br>
+   <img src="images/51.jpg"/><br/>
 
 ## Exercise 3: Connect the data from the Canvas App
 Now that you have created the entity to store device order requests let’s connect your Device Ordering Canvas app to this entity and add a form to submit device approval requests.</br>
 ### Task 1: Add CDS entity as a data source to the app
 Open the device ordering app. Make sure you are opening the version of the app that is in the newly created environment that has the CDS database instance.</br>
 1. Select Apps, select the Device Order App you created in Module 1, and click Edit.</br>
-   <img src="images/51.jpg"/><br/>
-2. Select the Data sources to display the current sources. Expand entities.</br>
    <img src="images/52.jpg"/><br/>
-3. Click on Device Orders from the entity list to include it as a data source for our app.</br>
+2. Select the Data sources to display the current sources. Expand entities.</br>
    <img src="images/53.jpg"/><br/>
+3. Click on Device Orders from the entity list to include it as a data source for our app.</br>
+   <img src="images/54.jpg"/><br/>
 
 ### Task 2: Create the edit form
 1. Switch to the Tree view and select the MainScreen.</br>
-   <img src="images/54.jpg"/><br/>
-2. Select few devices. Hold the “Alt” key, and then it will allow you to check the compare on the devices.</br>
    <img src="images/55.jpg"/><br/>
+2. Select few devices. Hold the “Alt” key, and then it will allow you to check the compare on the devices.</br>
 3. Select the **CompareScreen**. You will now have the selected devices.</br>
 4. Select the **Insert** tab, click **Forms**, and select **Edit**.</br>
 5. Click the **Data Source** drop-down in the Data pane on the right.</br>
