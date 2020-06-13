@@ -115,16 +115,24 @@ We will add two actions:</br>
 a. Update the record in the Device Order table</br>
 b. Send an email to the employee who requested the device</br>
 1. In the left **If yes** box, click **Add an action****</br>
+   <img src="images/img26.png"/><br/>
 2. Search for **Common Data Service** and select **Common Data Service – Update a record**</br>
+   <img src="images/img27.png"/><br/>
 3. Select **Current** for **Environment**.</br>
 4. Select **Device Orders** for **Entity Name**.</br>
 5. Select **Device Order** for **Record identifier**.</br>
+   <img src="images/img28.png"/><br/>
 This is the unique lookup ID for the record that was created.</br>
 6. Click **Show advanced options**.</br>
+   <img src="images/img29.png"/><br/>
 7. Select **Approve** from the **Approval Status Value** drop-down.</br>
+   <img src="images/img30.png"/><br/>
 8. Select the **Approved Date** field and select the **Expression** tab.</br>
+   <img src="images/img31.png"/><br/>
 9. Type **utcNow()** and click **OK**.</br>
+   <img src="images/img32.png"/><br/>
 10. In the Comments field, we want to preserve the earlier comments and append on the comments from the approver. To do so, select the **Comments** field and select **Comments**.</br>
+   <img src="images/img33.png"/><br/>
 11. Save the flow.</br>
 
 ### Task 3: Add another action
