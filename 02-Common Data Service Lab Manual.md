@@ -237,9 +237,8 @@ Open the device ordering app. Make sure you are opening the version of the app t
 4. Select the **Insert** tab, click **Forms**, and select **Edit**.</br>
    <img src="images/58.png"/><br/>
 5. Click the **Data Source** drop-down in the Data pane on the right.</br>
-   <img src="images/59.png"/><br/>
-6. Select the **Device Orders** entity as the data source.</br>
    <img src="images/60.png"/><br/>
+6. Select the **Device Orders** entity as the data source.</br>
 7. Click **Edit Fields**.</br>
 8. Add, remove, and order fields like the list below. The fields are added using the plus sign and can be reordered by dragging the field to the desired placement.</br>
 a. Device Name</br>
