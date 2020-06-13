@@ -223,13 +223,13 @@ Open the device ordering app. Make sure you are opening the version of the app t
 1. Select Apps, select the Device Order App you created in Module 1, and click Edit.</br>
    <img src="images/52.jpg"/><br/>
 2. Select the Data sources to display the current sources. Expand entities.</br>
-   <img src="images/53.jpg"/><br/>
+   <img src="images/53.png"/><br/>
 3. Click on Device Orders from the entity list to include it as a data source for our app.</br>
-   <img src="images/54.jpg"/><br/>
+   <img src="images/54.png"/><br/>
 
 ### Task 2: Create the edit form
 1. Switch to the Tree view and select the MainScreen.</br>
-   <img src="images/55.jpg"/><br/>
+   <img src="images/55.png"/><br/>
 2. Select few devices. Hold the “Alt” key, and then it will allow you to check the compare on the devices.</br>
 3. Select the **CompareScreen**. You will now have the selected devices.</br>
 4. Select the **Insert** tab, click **Forms**, and select **Edit**.</br>
