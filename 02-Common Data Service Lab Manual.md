@@ -47,10 +47,10 @@ You must be connected to the internet.</br>
 
 ### Overview
 The Common Data Service (CDS) adds data storage and modeling capabilities to Power Apps that is scalable and easy to provision. In this module, you will be using Common Data Service to model and store the data from the device ordering canvas app that you built in module 1. In the next module, you will be building a model-driven application using the same data that will be used by the back-office staff to process the device orders. These apps that you build on CDS use the same technology framework (Common Data Service) that Microsoft Dynamics 365 apps are built-on.</br>
-   <img src="images/01.jpg"/><br/>
+   <img src="images/1.jpg"/><br/>
 
 ### Goals for this lab
-   <img src="images/02.jpg"/><br/>
+   <img src="images/2.jpg"/><br/>
 
 ## Exercise 1: Exploring Common Data Service
 In this exercise, you will explore Common Data Service standard entities. Entities in CDS are like tables in a database or worksheets in Microsoft Excel. Entities can be connected together with relationships that model real world interactions between the entities. Each entity contains multiple records (rows), each having data fields. For example, a “Project” entity may have fields such as Name, Due Date, Status, etc. and it may be related to a “Project Owner” entity which might have
