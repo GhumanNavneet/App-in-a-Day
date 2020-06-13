@@ -445,7 +445,7 @@ Clear(CompareList);Navigate(MainScreen,ScreenTransition.None)</br>
 21. Save your Changes and Publish.</br>
 22. Select the **MainScreen** and click **Play**.</br>
 23. Select few more devices and click Compare</br>
-   <img src="images/124.png"/><br/>
+   <img src="images/225.png"/><br/>
 24. Select one of the new devices, provide a comment and click Submit.</br>
    <img src="images/122.png"/><br/>
 25. Verify that the confirmation screen shows the order details. Click OK.</br>
