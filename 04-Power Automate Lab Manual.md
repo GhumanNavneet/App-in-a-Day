@@ -138,21 +138,21 @@ This is the unique lookup ID for the record that was created.</br>
 ### Task 3: Add another action
 You will now add the send email action to the If Yes branch.</br>
 1. From within the yes branch, Click **Add an Action**.</br>
-   <img src="images/img34.png"/><br/>
-2. Search for **send email** and select **Send an email (V2) – Office 365 Outlook**.</br>
    <img src="images/img35.png"/><br/>
-3. Click **Sign in**.</br>
+2. Search for **send email** and select **Send an email (V2) – Office 365 Outlook**.</br>
    <img src="images/img36.png"/><br/>
-4. Click **Accept**.</br>
+3. Click **Sign in**.</br>
    <img src="images/img37.png"/><br/>
-5. Click on the **To** field and click **Switch to Advanced Mode**.</br>
+4. Click **Accept**.</br>
    <img src="images/img38.png"/><br/>
-6. Select **Requested By** for To. Select from under the **When a record is created** section.</br>
+5. Click on the **To** field and click **Switch to Advanced Mode**.</br>
    <img src="images/img39.png"/><br/>
+6. Select **Requested By** for To. Select from under the **When a record is created** section.</br>
+   <img src="images/img40.png"/><br/>
 7. Type **Your device order has been approved!** for **Subject**.</br>
 8. Click on the **Code View** button.</br>
 9. Set the **Body** value as shown below. Select **Device Name** and **Estimated Ship Date** from underneath the **When a record is created** header.</br>
-   <img src="images/img40.png"/><br/>
+   <img src="images/img41.png"/><br/>
 **Note:** If you do not have an Office 365 mailbox setup, you can use one of the other connectors to send the email, such as Outlook.com, Gmail or SendGrid.
 10. Click **Save**.</br>
 
