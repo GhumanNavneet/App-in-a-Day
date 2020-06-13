@@ -380,17 +380,18 @@ When the button is pressed, the form data will be submitted to the Common Data S
 2. Select a few devices to compare. And click **Compare**.</br>
    <img src="images/101.png"/><br/>
 3. Select one of the devices.</br>
-   <img src="images/103.png"/><br/>
+   <img src="images/301.png"/><br/>
 Notice that the Title, Price, Approver, and Requested By fields are already filled in.</br>
 4. Change the Approver email to your own email for test purposes.</br>
 5. Add some **Comments**, such as: “Current laptop does not work, need a new device.”</br>
 6. Click **Submit device request**.</br>
-   <img src="images/104.png"/><br/>
+   <img src="images/401.png"/><br/>
 The button should turn disabled (gray) for a few seconds while it’s submitting the request. If it does not do this there is likely an error. Click the X in top right to get back to the design mode.</br>
 If there is an error, you will see a yellow error icon next to the Submit button, hover over it to check the error.</br>
 7. The form will become empty after the record gets created, we will fix this issue in optional task. Exit the preview mode (‘X’ in top right).</br>
-   <img src="images/105.png"/><br/>
+   <img src="images/104.png"/><br/>
 8. Save the Application and Publish</br>
+   <img src="images/105.png"/><br/>
 
 ### Task 11: Verify a new item was added to the Device Order entity
 1. Open a browser window, go to Make Power Apps.</br>
@@ -414,7 +415,7 @@ Once the Form has been successfully submitted, it’s a good idea to show a conf
 5. Select the Form – you can use the tree view on the left to select **Form1**.</br>
    <img src="images/111.png"/><br/>
 6. Set the **OnSuccess** property to: **Navigate(SubmitSuccessScreen,ScreenTransition.None)**</br>
-   <img src="images/112.png"/><br/>
+   <img src="images/211.png"/><br/>
 7. Copy (Ctrl-C) the **Header** from the CompareScreen.</br>
 8. Go to the to the **SubmitSuccessScreen**, paste the header and align Top.</br>
    <img src="images/113.png"/><br/>
@@ -434,23 +435,23 @@ Clear(CompareList);Navigate(MainScreen,ScreenTransition.None)</br>
 16. Select the fields to display: Device Name, Price, Comments, Approver, Requested By, Request Date. Rearrange and remove any additional fields.</br>
    <img src="images/118.png"/><br/>
 17. Change the **Snap to columns** value from 3 to 1.</br>
-   <img src="images/119.png"/><br/>
+   <img src="images/210.png"/><br/>
 18. Change the **Layout** from Vertical to Horizontal.</br>
-   <img src="images/121.png"/><br/>
+   <img src="images/120.png"/><br/>
 19. Set form **Item** property to Form1.LastSubmit</br>
-   <img src="images/122.png"/><br/>
+   <img src="images/221.png"/><br/>
 20. Reposition/Resize the form until it looks like the image below.</br>
-   <img src="images/123.png"/><br/>
+   <img src="images/121.png"/><br/>
 21. Save your Changes and Publish.</br>
 22. Select the **MainScreen** and click **Play**.</br>
 23. Select few more devices and click Compare</br>
    <img src="images/124.png"/><br/>
 24. Select one of the new devices, provide a comment and click Submit.</br>
-   <img src="images/125.png"/><br/>
+   <img src="images/122.png"/><br/>
 25. Verify that the confirmation screen shows the order details. Click OK.</br>
-   <img src="images/126.png"/><br/>
+   <img src="images/123.png"/><br/>
 26. The application will navigate back to the main screen and the compare list will be cleared.</br>
-   <img src="images/127.png"/><br/>
+   <img src="images/124.png"/><br/>
 27. Close the application.</br>
 
 ### Lab survey
