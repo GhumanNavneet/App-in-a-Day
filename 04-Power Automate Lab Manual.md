@@ -201,7 +201,7 @@ In this exercise, you will add two actions to the “if no” branch.</br>
 2. In the If no branch, click **Add an action****.</br>
    <img src="images/img55.png"/><br/>
 3. Search for **Common Data Service** and select **Common Data Service – Update a record**.</br>
-   <img src="images/img56.png"/><br/>
+   <img src="images/img72.png"/><br/>
 4. Select **Current** for **environment, Device Orders** for **Entity Name**, select **Device Order** for **Record Identifier**, and click **Show advanced options**</br>
    <img src="images/img57.png"/><br/>
 5. Select **Reject** for **Approval Status Value**.</br>
