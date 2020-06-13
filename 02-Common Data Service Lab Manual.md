@@ -231,10 +231,15 @@ Open the device ordering app. Make sure you are opening the version of the app t
 1. Switch to the Tree view and select the MainScreen.</br>
    <img src="images/55.png"/><br/>
 2. Select few devices. Hold the “Alt” key, and then it will allow you to check the compare on the devices.</br>
+   <img src="images/56.png"/><br/>
 3. Select the **CompareScreen**. You will now have the selected devices.</br>
+   <img src="images/57.png"/><br/>
 4. Select the **Insert** tab, click **Forms**, and select **Edit**.</br>
+   <img src="images/58.png"/><br/>
 5. Click the **Data Source** drop-down in the Data pane on the right.</br>
+   <img src="images/59.png"/><br/>
 6. Select the **Device Orders** entity as the data source.</br>
+   <img src="images/60.png"/><br/>
 7. Click **Edit Fields**.</br>
 8. Add, remove, and order fields like the list below. The fields are added using the plus sign and can be reordered by dragging the field to the desired placement.</br>
 a. Device Name</br>
