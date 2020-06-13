@@ -183,7 +183,7 @@ d. Verify that the Common Data Service record was updated, and an email was sent
 8. The flow will run and send email to the manager email you provided. The request for approval email will look like the image below; it will include **Device information, Price, Department Contribution (the calculated field), and the Requester Comment**.</br>
 
 **REMINDER:** If the flow does not run immediately, please wait, it may take up to ten minutes for the flow to be triggered. To ensure the flow runs immediately, see note above - select the **Test** option in the top right and select the “I’ll perform the trigger action” option. Then go ahead and submit a device request. The flow should run immediately. The email, however, may take a few minutes to appear regardless of when the flow starts.</br>
-   <img src="images/img0.png"/><br/>
+   <img src="images/img50.png"/><br/>
 9. Click **Approve**.</br>
 10. Add a comment and click **Submit**.</br>
    <img src="images/img51.png"/><br/>
