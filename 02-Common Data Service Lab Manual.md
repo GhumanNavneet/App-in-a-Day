@@ -281,35 +281,50 @@ For the next few steps, we will use the Advanced pane to customize control prope
 4. Click **More Options** button in the **Data** section of the Advanced pane.</br>
    <img src="images/71.png"/><br/>
 5. To display the selected item in the Title field, set the **Default** property to CompareListGallery.Selected.ManufacturerName & " - " & CompareListGallery.Selected.Title</br>
+   <img src="images/72.png"/><br/>
 6. Click **More Options** button in the **DESIGN** section of the Advanced pane. We are going to change the Device Name field to be read only so they don’t change it.</br>
+   <img src="images/73.png"/><br/>
 7. Change the **DisplayMode** to **DisplayMode.View**. This will prevent users from changing the value within the text box.</br>
+   <img src="images/74.png"/><br/>
 
 ### Task 4: Configure the price field
 In this task, we are going to set the price to the price of the item and then make it read-only.</br>
 1. Expand **Price**.</br>
+   <img src="images/75.png"/><br/>
 2. Select the **Data Card Value**.</br>
+   <img src="images/76.png"/><br/>
 3. Select the **Advanced** tab and click **Unlock**.</br>
+   <img src="images/77.png"/><br/>
 4. Change the **Default** property in the Data section to: CompareListGallery.Selected.Price</br>
+   <img src="images/78.png"/><br/>
 5. Select the Price field and change the **DisplayMode** property to DisplayMode.View.</br>
+   <img src="images/79.png"/><br/>
 
 ### Task 5: Configure the approval field
 Let’s set the default value for the Approver to be the email address of the **logged in user’s manager**.</br>
 You will use the **Office 365 graph** to retrieve the manager’s email. You can find more about the Office 365 Users Connection provider here Office 365 Users Connection Provider</br>
 1. Select **Data sources**. Expand Connectors. Select Office 365 Users.</br>
+   <img src="images/80.png"/><br/>
 2. When prompted, click **Connect**</br>
+   <img src="images/81.png"/><br/>
 3. Select the **Approver Data Card** from the Tree view.</br>
+   <img src="images/82.png"/><br/>
 4. Go to the **Advanced** pane and **Unlock**.</br>
+   <img src="images/83.png"/><br/>
 5. Set the Default value to: User().Email This expression will use your user’s email, so you won’t accidentally email your manager to approve your testing.</br></br>
 In a real application or if you wanted to try the expression to use your managers email would be
 Office365Users.Manager(User().Email).Mail This would make an API call at runtime to get the manager’s
-email address of the logged-on user. If you try this and hit an error when calling the Office365Users.Manager() function, this may be because a manager is not set up in the system for the logged in Office 365 user. In that case, you can simply go back go User().Email.</br>
+email address of the logged-on user. If you try this and hit an error when calling the Office365Users.Manager() function, this may be because a manager is not set up in the system for the logged in Office 365 user. In that case, you can simply go back go User().Email.</br></r>
 6. Save your work and return to the continue editing the app.</br>
 The Office 365 User connector has access to many other valuable types of information you can learn more about the other actions and data available here Office 365 users Connector</br>
 
 ### Task 6: Configure the Comment field
 1. Expand the **Comments** field and select the **DataCardValue**.</br>
+   <img src="images/84.png"/><br/>
 2. Select the **Properties** tab and change the **Size -> Height** value to **80.**</br>
+   <img src="images/85.png"/><br/>
 Optionally, you may select the Text Input control **DataCardValue** and set its **HintText** property to: “Enter justification” (without quotes).</br>
+   <img src="images/86.png"/><br/>
 
 ### Task 7: Configure the Requested By field
 Let’s set the Requested By field to be the current logged on user’s email and disable the control so the user cannot change this value.</br>
@@ -317,86 +332,125 @@ Let’s set the Requested By field to be the current logged on user’s email an
 2. Select the **DataCardValue**.</br>
 3. Go to the **Advanced** pane and **Unlock** the card.</br>
 4. Change the **DisplayMode** property to: DisplayMode.View</br>
+   <img src="images/87.png"/><br/>
 5. Set the **Default** value to User().Email</br>
 This is the email of the currently logged in user</br>
+   <img src="images/88.png"/><br/>
 
 ### Task 8: Configure the requested date field
 Let’s set the Request Date to be today’s date.</br>
 1. Expand the **Request Date** card.</br>
 2. Select the **DateValue** card.</br>
+   <img src="images/89.png"/><br/>
 3. Go to the **Advanced** pane and **Unlock** the card.</br>
 4. Change the **DefaultDate** property to Today()</br>
+   <img src="images/90.png"/><br/>
 Notice that the date in the calendar control will change to today’s date.</br>
 Now we will hide the **Request Date** card. We don’t need to show this field to the user. Since we have included it as part of the form the field will get updated as part of the form submit.</br>
 5. Select the **Request Date** DataCard</br>
+   <img src="images/91.png"/><br/>
 6. Go to the **Properties** pane.</br>
 7. Set the **Visible** toggle to **Off**.</br>
+   <img src="images/92.png"/><br/>
 
 ### Task 9: Add a button to submit the form
 1. Select the **MainScreen**.</br>
 2. Copy (Ctrl-C) the **Compare button** from the first screen which has the correct color values.</br>
+   <img src="images/93.png"/><br/>
 3. Go back to the **CompareScreen** and paste (Ctrl-V) the button.</br>
+   <img src="images/94.png"/><br/>
 4. Position it in the bottom right of the screen, center aligned with the Form.</br>
 5. Make the button larger – you can resize to 280x60 using the Properties pane on the right.</br>
-6. Set the button’s Text property to “Submit device request”</br>
+   <img src="images/95.png"/><br/>
+6. Set the button’s **Text** property to **“Submit device request”**</br>
+   <img src="images/96.png"/><br/>
 7. Rename the button to **SubmitButton**.</br>
+   <img src="images/97.png"/><br/>
 8. The button should be enabled only if a device is selected. To do this, change the button’s **DisplayMode** property to: If(!IsBlank(CompareListGallery.Selected), DisplayMode.Edit, DisplayMode.Disabled)</br>
+   <img src="images/98.png"/><br/>
 **Note:** You might notice the exclamation mark (!) in the formula !IsBlank() Normally if you just have IsBlank() the check is for blank. Adding the exclamation mark (!) in front of it changes it to check if it is NOT blank.</br>
 9. Next, we are going to configure what we want to happen when the button is clicked. Set the **OnSelect** property to SubmitForm(Form1).</br>
+   <img src="images/99.png"/><br/>
 When the button is pressed, the form data will be submitted to the Common Data Service.</br>
 10. Save your work and return to continue editing the app.</br>
 
 ### Task 10: Test the form
 1. Select the **MainScreen** in the left side tree navigation and click Play.</br>
+   <img src="images/100.png"/><br/>
 2. Select a few devices to compare. And click **Compare**.</br>
+   <img src="images/101.png"/><br/>
 3. Select one of the devices.</br>
+   <img src="images/103.png"/><br/>
 Notice that the Title, Price, Approver, and Requested By fields are already filled in.</br>
 4. Change the Approver email to your own email for test purposes.</br>
 5. Add some **Comments**, such as: “Current laptop does not work, need a new device.”</br>
 6. Click **Submit device request**.</br>
+   <img src="images/104.png"/><br/>
 The button should turn disabled (gray) for a few seconds while it’s submitting the request. If it does not do this there is likely an error. Click the X in top right to get back to the design mode.</br>
 If there is an error, you will see a yellow error icon next to the Submit button, hover over it to check the error.</br>
 7. The form will become empty after the record gets created, we will fix this issue in optional task. Exit the preview mode (‘X’ in top right).</br>
+   <img src="images/105.png"/><br/>
 8. Save the Application and Publish</br>
 
 ### Task 11: Verify a new item was added to the Device Order entity
 1. Open a browser window, go to Make Power Apps.</br>
 2. Click on **Data -> Entities**.</br>
+   <img src="images/106.png"/><br/>
 3. Select the **Device Order** entity.</br>
+   <img src="images/107.png"/><br/>
 4. Select the **Data** tab.</br>
 5. You should see a newly added row with your device order details. This may take a few seconds to load.</br>
+   <img src="images/108.png"/><br/>
 
 ### Task 12: [Optional] Navigate to confirmation screen after the Form submit is successful
 This step is optional, if you’re short on time you may skip it and continue to the next module.</br></br>
 Once the Form has been successfully submitted, it’s a good idea to show a confirmation screen and allow the user to navigate back to the main screen.</br>
 1. Navigate to the Canvas Studio for your powerapp.</br>
 2. Select **Home -> New screen -> Blank**</br>
+   <img src="images/109.png"/><br/>
 3. Rename the screen to **SubmitSuccessScreen**</br>
+   <img src="images/110.png"/><br/>
 4. Expand the **CompareScreen**.</br>
 5. Select the Form – you can use the tree view on the left to select **Form1**.</br>
+   <img src="images/111.png"/><br/>
 6. Set the **OnSuccess** property to: **Navigate(SubmitSuccessScreen,ScreenTransition.None)**</br>
+   <img src="images/112.png"/><br/>
 7. Copy (Ctrl-C) the **Header** from the CompareScreen.</br>
 8. Go to the to the **SubmitSuccessScreen**, paste the header and align Top.</br>
+   <img src="images/113.png"/><br/>
 9. **Insert** another **label** in the middle of the screen and set the **Text** to: **"Your device request has been successfully submitted. Thank you**."</br>
 10. Increase the font size, the size of the label and center the text.</br>
+   <img src="images/114.png"/><br/>
 11. Add a **button** and set its **Text** to: **"OK”**.</br>
 12. When the button is pressed, let us remove all the items from the CompareList collection and navigate to the first screen.</br>
 13. Set the **OnSelect** property of the button to:</br></br>
 Clear(CompareList);Navigate(MainScreen,ScreenTransition.None)</br>
+   <img src="images/115.png"/><br/>
 **Note:** ‘;’ is used a separator when multiple functions are called one after the other. If you are in a locale where ‘;’ is used as a comma-separator, then use a double ‘;’ here (without the single-quotes).</br>
 14. Move the label up and add a Display Form: **Insert -> Form -> Display**.</br>
+   <img src="images/116.png"/><br/>
 15. Configure its **data source** to point to the **‘Device Order’** entity.</br>
+   <img src="images/117.png"/><br/>
 16. Select the fields to display: Device Name, Price, Comments, Approver, Requested By, Request Date. Rearrange and remove any additional fields.</br>
+   <img src="images/118.png"/><br/>
 17. Change the **Snap to columns** value from 3 to 1.</br>
+   <img src="images/119.png"/><br/>
 18. Change the **Layout** from Vertical to Horizontal.</br>
+   <img src="images/121.png"/><br/>
 19. Set form **Item** property to Form1.LastSubmit</br>
+   <img src="images/122.png"/><br/>
 20. Reposition/Resize the form until it looks like the image below.</br>
+   <img src="images/123.png"/><br/>
 21. Save your Changes and Publish.</br>
 22. Select the **MainScreen** and click **Play**.</br>
 23. Select few more devices and click Compare</br>
+   <img src="images/124.png"/><br/>
 24. Select one of the new devices, provide a comment and click Submit.</br>
+   <img src="images/125.png"/><br/>
 25. Verify that the confirmation screen shows the order details. Click OK.</br>
+   <img src="images/126.png"/><br/>
 26. The application will navigate back to the main screen and the compare list will be cleared.</br>
+   <img src="images/127.png"/><br/>
 27. Close the application.</br>
 
 ### Lab survey
