@@ -197,22 +197,34 @@ In this exercise, you will add two actions to the “if no” branch.</br>
 
 ### Task 1: Add actions
 1. If you don’t already have the flow open, open it in edit mode.</br>
+   <img src="images/img55.png"/><br/>
 2. In the If no branch, click **Add an action****.</br>
+   <img src="images/img54.png"/><br/>
 3. Search for **Common Data Service** and select **Common Data Service – Update a record**.</br>
+   <img src="images/img53.png"/><br/>
 4. Select **Current** for **environment, Device Orders** for **Entity Name**, select **Device Order** for **Record Identifier**, and click **Show advanced options**</br>
+   <img src="images/img56.png"/><br/>
 5. Select **Reject** for **Approval Status Value**.</br>
-6. Click **Add an action**.</br>
+   <img src="images/img57.png"/><br/>
+6. Click **Add an action**.</br>   
+<img src="images/img58.png"/><br/>
 7. Search for **send email** and select **Send an email (v2) - Office 365 Outlook**.</br>
+   <img src="images/img59.png"/><br/>
 8. Provide the information shown on the image below. This will send an email to the requestor informing them that their device request was not approved. Select Requested By and Device Name from under the **When a record is created** header.</br>
+   <img src="images/img60.png"/><br/>
 9. **Save** the flow.</br>
 
 ### Task 2: Test the updated Flow
 1. Click **Test** in the top right of the flow editor and start the Flow.</br>
 2. Run the Device Ordering app -> Select a device and submit an approval request.</br>
 3. You should receive an email with options to Approve or **Reject** the request. Select Reject this time and enter some comments, such as “Not eligible for new device.” Click Submit.</br>
+   <img src="images/img61.png"/><br/>
 4. Confirm that the requestor receives an email informing them that their device approval request was rejected.</br>
+   <img src="images/img62.png"/><br/>
 5. Navigate to Make Power Apps select **Apps** and start the **Device Procurement** application.</br>
+   <img src="images/img63.png"/><br/>
 6. Device Orders will now have the Approval Status.</br>
+<img src="images/img64.png"/><br/>
 
 ### Task 3: Visit the approval center
 1. Use the Device Ordering app to **submit a few more approval requests**.</br>
