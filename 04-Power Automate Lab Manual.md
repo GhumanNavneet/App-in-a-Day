@@ -12,7 +12,7 @@ Exercise 4: Update the Flow</br>
 **Copyright**</br>
 
 # Power Automate
-## Lab Prerequisites</br>
+## Lab Prerequisites
 
 This is the fourth lab in a five-part series covering Power Apps, Common Data Service, and Power Automate. The assumption is that you have successfully completed the first three modules, or at least the initial part of setting up an environment as described in the overview – **“00-AppInADay Lab Overview.pdf”**.</br></br>
 If you have not completed the previous modules, you can use the partially completed version of the lab package in the“\Completed\Module3” folder. Follow the instructions in the document “Importing Module 3 Completed” before proceeding with this module, which will provision the app and the Common Data Service entity into your environment.</br></br>
