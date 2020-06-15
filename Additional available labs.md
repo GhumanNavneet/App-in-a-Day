@@ -11,7 +11,7 @@ https://aka.ms/advancedappinaday.</br>
 ## Supplemental labs
 The following labs continue building the functionality for the apps you build in the App in a Day course.</br></br>
 ```
-NOTE: These labs are in C:\AppInADay\PAHandsOnLabContent folder in your "Virtual Machine"
+NOTE: The Links for these labs are in C:\AppInADay\PAHandsOnLabContent folder in your "Virtual Machine"
 ```
 ## 1. S01-Power BI
 Introduces you to Power BI. You will learn how to:</br>
