@@ -131,6 +131,7 @@ In this task, you will rename Screen1 to MainScreen.</br>
 13. Change the value of the Text field to: "Hello, " & User().FullName</br>
    <img src="images/ppa21.jpg"/><br/>
 ``Note: All functions in Power Apps are case sensitive. As you start typing “User” you will see a drop-down of available choices. It is a good idea to pick from the autocomplete options. You will also notice help text at the top showing the required parameters, in this case, it requires no input parameters.``
+
 14. Right-align the text in the label by selecting the **Align** and **Align Right** option in the **Home** tab on the ribbon.</br>
 15. Change the text **Color** to **White**.</br>
 16. Widen the label, so the text does not wrap for longer usernames.</br>
