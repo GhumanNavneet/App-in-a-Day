@@ -6,8 +6,9 @@
  * Lab Prerequisites</br>
  * Power Apps Canvas Studio Layout</br>
  * Goals for this lab</br>
- * Introduction: Device Ordering Scenario</br>
-#### Solution overview
+ * Introduction: Device Ordering Scenario</br></br>
+ 
+### Solution overview
 Locale-specific difference in formulas</br>
 Exercise 1: Create the app in Power Apps</br>
 Exercise 2: Add Device Gallery and Connect to Data Source</br>
@@ -16,8 +17,8 @@ Lab survey</br>
 References</br>
 Copyright</br>
 
-### Power Apps Canvas App
-#### Lab Prerequisites
+## Power Apps Canvas App
+### Lab Prerequisites
 Follow the pre-requisite steps described in the document: **00-AppInADay Lab Overview.pdf**, that is included in the lab package. Before beginning this lab, confirm that you have provisioned an environment where you will save your apps,flows and database entities.</br>
 
 ``IMPORTANT: Do not proceed before going through the lab pre-requisite steps``
