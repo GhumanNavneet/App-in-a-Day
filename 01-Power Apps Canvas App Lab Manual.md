@@ -16,7 +16,6 @@ Lab survey</br>
 References</br>
 Copyright</br>
 
-
 ### Power Apps Canvas App
 #### Lab Prerequisites
 Follow the pre-requisite steps described in the document: **00-AppInADay Lab Overview.pdf**, that is included in the lab package. Before beginning this lab, confirm that you have provisioned an environment where you will save your apps,flows and database entities.</br>
@@ -42,8 +41,7 @@ Power Apps Studio is designed to have a user interface familiar to users of the 
 Imagine an organization where every three years the employees go through a hardware refresh cycle. The organization would like to build a customized app that runs on the web and mobile devices, which will help streamline the device order and approval process. Moreover, they do not have traditional development resources available, such as a .NET, Xamarin or custom website developer, to create this application.
 
 #### Solution overview
-The Microsoft business application platform technologies enable tech-savvy business users (aka “citizen developers”) to build a customized device ordering solution. The application user interface and interaction logic are built in Power Apps, the approval workflow is automated using Power Automate, and the device order data is stored in the Common Data
-Service.</br>
+The Microsoft business application platform technologies enable tech-savvy business users (aka “citizen developers”) to build a customized device ordering solution. The application user interface and interaction logic are built in Power Apps, the approval workflow is automated using Power Automate, and the device order data is stored in the Common Data Service.</br>
 
 Key features of the solution:</br>
 a. Ability to browse through a selection of devices and filter the list by manufacturer</br>
@@ -67,10 +65,10 @@ When you are done with this first portion of the lab, your app will look like th
 
 ### Locale-specific difference in formulas
 Before you begin, please note that if your computer has its regional settings set to use the comma ‘,’ for itsdecimal separator (like in much of Europe) your formulas will need to use a semicolon ‘;’ instead of a comma in your formulas. For example:</br>
-En-US       Filter(Machines, OEMsGallery.Selected.MFR=MFR)</br>
-de-DE       Filter(Machines; OEMsGallery.Selected.MFR=MFR)</br>
+En-US - Filter(Machines, OEMsGallery.Selected.MFR=MFR)</br>
+de-DE - Filter(Machines; OEMsGallery.Selected.MFR=MFR)</br>
 
-These localized formats are indicated with the <image> symbol throughout the document. If you are in the en-us locale, you can ignore any of the formulas indicated by the locale symbol.
+These localized formats are indicated with the symbol throughout the document. If you are in the en-us locale, you can ignore any of the formulas indicated by the locale symbol.
 
 ### Exercise 1: Create the app in Power Apps
 
