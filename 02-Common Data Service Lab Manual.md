@@ -2,10 +2,10 @@
 
 ## Contents
 ####  Common Data Service
-Lab Prerequisites</br>
-Before you begin</br>
-Overview</br>
-Goals for this lab</br>
+ * Lab Prerequisites</br>
+ * Before you begin</br>
+ * Overview</br>
+ * Goals for this lab</br>
 
 #### Exercise 1: Exploring Common Data Service
 Task 1: Explore standard entities</br>
