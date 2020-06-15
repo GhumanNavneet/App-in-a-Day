@@ -6,7 +6,8 @@
  * Lab Prerequisites</br>
  * Power Apps Canvas Studio Layout</br>
  * Goals for this lab</br>
- * Introduction: Device Ordering Scenario</br></br>
+ * Introduction: Device Ordering Scenario</br>
+ 
  
 ### Solution overview
 Locale-specific difference in formulas</br>
