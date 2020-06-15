@@ -2,11 +2,11 @@
 ## Module 1: Power Apps Canvas App
 
 ### Contents
-Power Apps Canvas App</br>
-Lab Prerequisites</br>
-Power Apps Canvas Studio Layout</br>
-Goals for this lab</br>
-Introduction: Device Ordering Scenario</br>
+ * Power Apps Canvas App</br>
+ * Lab Prerequisites</br>
+ * Power Apps Canvas Studio Layout</br>
+ * Goals for this lab</br>
+ * Introduction: Device Ordering Scenario</br>
 #### Solution overview
 Locale-specific difference in formulas</br>
 Exercise 1: Create the app in Power Apps</br>
